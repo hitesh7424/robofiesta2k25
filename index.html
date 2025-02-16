@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robofiesta 2k25</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="logo.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <!-- <div class="custom-cursor"></div> -->
+
+    <!-- Loader -->
+<!-- DotLottie Loader (Full-Screen) -->
+<div class="loader" id="loader">
+  <dotlottie-player
+    src="https://lottie.host/b4b4708b-8fd7-4bbd-8050-78606f5f69ce/rLO2PzvWqz.lottie"
+    background="transparent"
+    speed="1"
+    style="width: 25rem; height: 25rem;"
+    loop
+    autoplay
+  ></dotlottie-player>
+</div>
+
+<!-- Include DotLottie Script -->
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo Container: Two logos side by side -->
+        <div class="logo-container">
+          <a href="index.html" class="event-logo">
+            <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
+          </a>
+          <a href="https://www.kvcet.edu" class="college-logo">
+            <img src="images/college-logo.png" alt="College Logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Particle.js container -->
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="hero-content">
+         
+          <!-- basic logo of event for hero -->
+          <div class="rf-main" id="hhome">
+            <svg class = "svgs" viewBox="0 0 960 300">
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">ROBOFIESTA 2K25</text>
+                  
+                </symbol>
+              
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
+        </div>
+           <!-- end of logo -->
+
+
+          
+          <p class="hero-description">
+            Welcome to the Future of Robotics
+          </p>
+
+          <!-- Fancy Neon Countdown -->
+          <div id="countdown">
+            <div class="countdown-item">
+              <span class="countdown-number" id="cd-days">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="cd-hours">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="cd-minutes">00</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="cd-seconds">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+          <!-- End Countdown -->
+          <a href="#events" class="cta-button">Explore Events</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <!-- Neon Header Outside Cards -->
+        <h2 class="about-header">Discover Our World</h2>
+        <div class="about-cards">
+          <!-- Card 1: About KVCET -->
+          <div class="about-card">
+            <div class="card-image">
+              <img src="images/kvcet.jpg" alt="KVCET Campus" />
+            </div>
+            <div class="card-content">
+              <h3>About KVCET</h3>
+              <p>
+                Karpaga Vinayaga College of Engineering and Technology (KVCET)
+                stands as a beacon of academic excellence and innovation.
+                Established in 2001, our institution is dedicated to nurturing
+                talent through state-of-the-art infrastructure, dynamic teaching
+                methodologies, and a commitment to holistic development. With a
+                vibrant campus life and industry-aligned curriculum, KVCET
+                empowers students to transform challenges into opportunities and
+                emerge as leaders in their chosen fields.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2: Department of Robotics and Automation -->
+          <div class="about-card">
+            <div class="card-image">
+              <img
+                src="images/department.jpg"
+                alt="Department of Robotics and Automation"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Department of Robotics and Automation</h3>
+              <p>
+                Our Department of Robotics and Automation pioneers a hands-on
+                approach to learning, blending theoretical knowledge with
+                practical application. Through cutting-edge labs and
+                collaborative projects, we equip students with the skills to
+                innovate and excel in emerging technologies. Emphasizing
+                research, creativity, and industry partnerships, our department
+                is committed to driving forward the future of robotics and
+                automation.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3: About Robofiesta 2K25 -->
+          <div class="about-card">
+            <div class="card-image">
+              <img src="images/event.jpg" alt="Robofiesta 2K25" />
+            </div>
+            <div class="card-content">
+              <h3>About Robofiesta 2K25</h3>
+              <p>
+                Robofiesta 2K25 is our flagship event that celebrates
+                technological ingenuity and creative excellence. Experience an
+                immersive blend of interactive workshops, live robotics
+                demonstrations, and competitive challenges designed to ignite
+                innovation and inspire future leaders. Robofiesta 2K25 brings
+                together innovators and technology enthusiasts from across the
+                nation, providing a platform to network, learn, and explore
+                emerging trends in robotics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Events Section -->
+<section class="events" id="events">
+  <div class="container">
+    <span class="section-tag">What's Happening</span>
+    <h2 class="section-title">Featured Events</h2>
+    <div class="events-grid" id="events-grid">
+      <!-- Event cards will be dynamically inserted here -->
+    </div>
+  </div>
+</section>
+
+
+    <!-- Coordinators Section -->
+    <section id="coordinators" class="coordinators">
+      <div class="container">
+        <h2 class="section-title">Meet Our Coordinators</h2>
+
+        <!-- Staff Coordinators -->
+        <div class="coordinator-group">
+          <h3 class="group-title">Staff Coordinators</h3>
+          <div class="coordinator-cards">
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/staff_tharmalingam.png"
+                  alt="Mr. S. Tharmalingam"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Mr. S. Tharmalingam</h4>
+                <p>Staff Coordinator</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/staff_priyanka.png"
+                  alt="Ms. Ch. Priyanka"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/girl';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Ms. Ch. Priyanka</h4>
+                <p>Staff Coordinator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Coordinators -->
+        <div class="coordinator-group student-group">
+          <h3 class="group-title">Student Coordinators</h3>
+          <div class="coordinator-cards">
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_john.png"
+                  alt="John Peter D"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>John Peter D</h4>
+                <p>IV Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_deepika.png"
+                  alt="Deepika S"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/girl';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Deepika S</h4>
+                <p>III Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_ashvath.png"
+                  alt="Ashvath K"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Ashvath K</h4>
+                <p>III Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_gokul.png"
+                  alt="Gokul G"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Gokul G</h4>
+                <p>II Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_shaheni.png"
+                  alt="Shaheni S"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/girl';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Shaheni S</h4>
+                <p>II Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+      <div class="container footer-container">
+        <!-- Contact Information -->
+        <div class="footer-section footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <img src="icons/email.png" alt="Email Icon" class="footer-icon" />
+              <a href="mailto:kvcet@live.com">kvcet@live.com</a>
+            </li>
+            <li>
+              <img src="icons/phone.png" alt="Phone Icon" class="footer-icon" />
+              <a href="tel:04471565297">044-7156 5297</a>
+              <pre> | </pre>
+              <a href="tel:+91-9842069933">+91-9842069933</a>
+            </li>
+            <li>
+              <img
+                src="icons/instagram.png"
+                alt="Instagram Icon"
+                class="footer-icon"
+              /><a
+                href="https://www.instagram.com/robo_fiesta_2k25/"
+                target="_blank"
+                >ROBO_FIESTA_2K25</a
+              >
+            </li>
+            <li>
+              <img
+                src="icons/location.png"
+                alt="Location Icon"
+                class="footer-icon"
+              />
+              Karpaga Vinayaga College of Engineering and Technology<br />
+              G.S.T Road, Chinna Kolambakkam,<br />
+              Madhuranthagam (T.k), Chengalpattu (D.t)-603308
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Location (Google Map) -->
+        <div class="footer-section footer-location">
+          <h3>Our Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62298.12567621144!2d79.95389986567388!3d12.606431426158998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a531d49e3a4dc6f%3A0x2485bea2ae7907a2!2sKarpaga%20Vinayaga%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1739719870286!5m2!1sen!2sin"
+            width="250"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 Karpaga Vinayaga College of Engineering and Technology. All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Include Particle.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

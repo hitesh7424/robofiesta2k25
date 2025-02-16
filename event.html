@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robofiesta 2k25 - Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Global canvas for entire page background -->
+  <canvas id="global-canvas"></canvas>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <!-- Logo Container with two interactive logos -->
+      <div class="logo-container">
+        <a href="index.html" class="event-logo">
+          <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
+        </a>
+        <a href="https://www.kvcet.edu" class="college-logo">
+          <img src="images/college-logo.png" alt="College Logo" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="#coordinators">Coordinators</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Events Section -->
+  <section id="events">
+    <h2>Our Events</h2>
+    <div class="event-section" data-audio="audio/event1.mp3">
+      <h3>Robotic Battles</h3>
+      <p>
+        Experience high-intensity robotic battles that push technology to its limits.
+      </p>
+      <a href="#" class="read-more">Read More</a>
+      <audio src="audio/event1.mp3" loop></audio>
+    </div>
+    <div class="event-section" data-audio="audio/event2.mp3">
+      <h3>Innovative Workshops</h3>
+      <p>
+        Engage with experts in interactive workshops designed to inspire innovation.
+      </p>
+      <a href="#" class="read-more">Read More</a>
+      <audio src="audio/event2.mp3" loop></audio>
+    </div>
+    <div class="event-section" data-audio="audio/event3.mp3">
+      <h3>Live Demonstrations</h3>
+      <p>
+        Witness cutting-edge demonstrations of the latest robotics advancements.
+      </p>
+      <a href="#" class="read-more">Read More</a>
+      <audio src="audio/event3.mp3" loop></audio>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
