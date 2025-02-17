@@ -407,6 +407,7 @@ body {
 .about-card {
   background: var(--card-bg);               /* Translucent background */
   border: 2px solid var(--color-accent);      /* Thick accent border */
+  margin: 1rem;
   border-radius: 10px;
   padding: 1rem;                             /* Extra padding inside the card */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
