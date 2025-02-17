@@ -1,38 +1,42 @@
 :root {
   /* --- Basic Colors --- */
-  --color-dark: #0A0A0A;
-  --color-neon-purple: #8B5CF6;
-  --color-neon-blue: #0EA5E9;
-  --color-white: #ffffff;
-
-
-    /* --- Brand Color Palette --- */
-  --color-bg: #1F1F1F;           /* Dark background */
-  --color-primary: #FF6B6B;      /* Coral for primary elements */
-  --color-secondary: #FFE66D;    /* Bright yellow for secondary accents */
-  --color-accent: #4ECDC4;       /* Teal for interactive accents */
-    --color-text: #ffffff;         /* White text */
-
+  --color-dark: #121212;    /* Deep dark for backgrounds */
+  --color-white: #ffffff;   /* Clean white for contrast */
+  
+  /* --- Primary Theme Colors --- */
+  --color-primary: #bb86fc;   /* Soft, modern purple for primary elements */
+  --color-secondary: #03dac6; /* Refreshing teal for secondary accents */
+  --color-accent: #ff6b6b;    /* Vibrant coral for interactive highlights */
+  
+  /* --- Neon Accent Colors --- */
+  --color-neon-purple: #9d4edd; /* Striking neon purple for extra flair */
+  --color-neon-blue: #0ea5e9;   /* Energetic neon blue for standout elements */
+  
+  /* --- Background & Text --- */
+  --color-bg: #121212;    /* Subtle dark grey background */
+  --color-text: #e0e0e0;  /* Light grey text for readability */
+  
   /* --- Interactive Element Colors --- */
-  --navbar-scrolled-bg: rgba(255, 255, 255, 0.05); /* Background for navbar on scroll*/
-    --custom-cursor-active-bg: rgba(139, 92, 246, 0.2); /* Custom Cursor active */
-    --cursor-active-bg: rgba(255, 107, 107, 0.2);    /* Generic cursor active */
-
-
-  /* --- Card Element Colors --- */
+  --navbar-scrolled-bg: rgba(255, 255, 255, 0.05);
+  --custom-cursor-active-bg: rgba(139, 92, 246, 0.2);
+  --navbar-bg-scrolled: rgba(255, 255, 255, 0.05);
+  --logo-shadow: rgba(255, 107, 107, 0.5);
+  --cursor-active-bg: rgba(255, 107, 107, 0.2);
+  
+  /* --- Card Colors --- */
   --card-bg: rgba(255, 255, 255, 0.1);
   --card-border: rgba(255, 255, 255, 0.2);
   --card-shadow: rgba(255, 107, 107, 0.4);
-
-
-  /* --- Logo Element Colors --- */
-    --logo-shadow: rgba(255, 107, 107, 0.5);
-
-
+  
   /* --- Fonts --- */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
 }
+
+
+
+
+
 
 
 /* Reset and Base Styles */
@@ -483,28 +487,16 @@ body {
   }
 }
 
-/* New Color Palette */
-:root {
-  --color-bg: #1F1F1F;           /* Dark background */
-  --color-primary: #FF6B6B;      /* Coral for primary elements */
-  --color-secondary: #FFE66D;    /* Bright yellow for secondary accents */
-  --color-accent: #4ECDC4;       /* Teal for interactive accents */
-  --color-text: #ffffff;         /* White text */
-  
-  /* Derived colors for cards */
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --card-shadow: rgba(255, 107, 107, 0.4);
-  
-  /* Fonts */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
+
 
 /* Coordinators Section Container */
 .coordinators {
   padding: 4rem 0;
   background: var(--color-bg);
 }
+
+
+
 
 .coordinators .section-title {
   font-family: var(--font-display);
@@ -532,13 +524,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
+  margin-top: 3rem;
   gap: 2rem;
 }
 
 /* Student Coordinators: Single Row with Horizontal Scroll */
 .student-group .coordinator-cards {
   flex-wrap: wrap;
-  /* overflow-x: auto; */
   justify-content: center;
 }
 
@@ -630,62 +623,8 @@ body {
 
 
 
-/* New Color Palette (if not already defined) */
-:root {
-  --color-bg: #1F1F1F;           /* Dark background */
-  --color-primary: #FF6B6B;      /* Coral for primary elements */
-  --color-secondary: #FFE66D;    /* Bright yellow for secondary accents */
-  --color-accent: #4ECDC4;       /* Teal for interactive accents */
-  --color-text: #ffffff;         /* White text */
-  
-  /* Derived Colors */
-  --navbar-bg-scrolled: rgba(255, 255, 255, 0.05);
-  --logo-shadow: rgba(255, 107, 107, 0.5);
-  --cursor-active-bg: rgba(255, 107, 107, 0.2);
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --card-border: rgba(255, 255, 255, 0.2);
-  --card-shadow: rgba(255, 107, 107, 0.4);
-  
-  /* Fonts */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
-/* New Color Palette (if not already defined) */
-:root {
-  --color-bg: #1F1F1F;
-  --color-primary: #FF6B6B;
-  --color-secondary: #FFE66D;
-  --color-accent: #4ECDC4;
-  --color-text: #ffffff;
-  
-  /* Fonts */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
-/* New Color Palette (if not already defined) */
-:root {
-  --color-bg: #1F1F1F;           /* Dark background */
-  --color-primary: #FF6B6B;      /* Coral */
-  --color-secondary: #FFE66D;    /* Bright yellow */
-  --color-accent: #4ECDC4;       /* Teal */
-  --color-text: #ffffff;         /* White text */
-  
-  /* Fonts */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
-/* New Color Palette */
-:root {
-  --color-bg: #1F1F1F;           /* Dark background */
-  --color-primary: #FF6B6B;      /* Coral */
-  --color-secondary: #FFE66D;    /* Bright yellow */
-  --color-accent: #4ECDC4;       /* Teal */
-  --color-text: #ffffff;         /* White text */
-  
-  /* Fonts */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
+
+
 
 /* Footer Styles */
 .footer {
@@ -788,31 +727,7 @@ body {
 
 
 
-/* New Color Palette */
-:root {
-  --color-bg: #1F1F1F;           /* Dark background */
-  --color-primary: #FF6B6B;      /* Coral for primary elements */
-  --color-secondary: #FFE66D;    /* Bright yellow for secondary accents */
-  --color-accent: #4ECDC4;       /* Teal for interactive accents */
-  --color-text: #ffffff;         /* White text */
-  
-  /* Derived for cards */
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --card-border: rgba(255, 255, 255, 0.2);
-  --card-shadow: rgba(255, 107, 107, 0.4);
-  
-  /* Fonts */
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
-:root {
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --card-border: rgba(255, 255, 255, 0.2);
-  --card-shadow: rgba(255, 107, 107, 0.4);
-  --color-primary: #FF6B6B; /* Coral */
-  --color-bg: #1F1F1F;
-  --font-display: 'Space Grotesk', sans-serif;
-}
+
 
 
 /* Events Section */
