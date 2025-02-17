@@ -150,7 +150,6 @@ updateCountdown();
 // Animate About Cards on Scroll
 document.addEventListener("DOMContentLoaded", function() {
   renderEvents();
-  setupScrollReveal();
   const aboutCards = document.querySelector('.about-cards');
   const observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
@@ -198,7 +197,8 @@ const eventData = {
         "PRAKASH M"
       ],
       "faculty_coordinator": "Mr.S.THARMALINGAM",
-      "image": "line-following-robot.jpg"
+      "image": "line-following-robot.jpg",
+      "category": "technical"
     },
     {
       "name": "Sumo Titans (Sumo Bot)",
@@ -221,7 +221,8 @@ const eventData = {
         "SRIDHAR S"
       ],
       "faculty_coordinator": "Ms.M.VENNILA",
-      "image": "sumo-expo.webp"
+      "image": "sumo-expo.webp",
+      "category": "technical"
     },
     {
       "name": "Circuit Labyrinth (Robo Maze)",
@@ -243,7 +244,8 @@ const eventData = {
         "WILSON J"
       ],
       "faculty_coordinator": "Mr.J.SRINIVAS",
-      "image": "robo-maze.webp"
+      "image": "robo-maze.webp",
+      "category": "technical"
     },
     {
       "name": "Cyber Soccer Clash (Robo Soccer)",
@@ -265,7 +267,8 @@ const eventData = {
         "PRATHAP A"
       ],
       "faculty_coordinator": "Ms.M.VENNILA",
-      "image": "robo-soccer.webp"
+      "image": "robo-soccer.webp",
+      "category": "technical"
     },
     {
       "name": "Velocity Vanguard (Robo Race)",
@@ -287,7 +290,8 @@ const eventData = {
         "PRAVEEN B"
       ],
       "faculty_coordinator": "Ms.S.PRIYADHARSHINI",
-      "image": "robo-race.webp"
+      "image": "robo-race.webp",
+      "category": "technical"
     },
     {
       "name": "Ideathon (Paper Presentation)",
@@ -309,7 +313,8 @@ const eventData = {
         "JIBIN B MATHEW"
       ],
       "faculty_coordinator": "Ms.CH.PRIYANKA",
-      "image": "paper-presentation.jpg"
+      "image": "paper-presentation.jpg",
+      "category": "technical"
     },
     {
       "name": "ROSolution Workshop (Workshop 1 - ROS)",
@@ -331,7 +336,8 @@ const eventData = {
         "ARUL SELVAM A"
       ],
       "faculty_coordinator": "Mr.S.THARMALINGAM",
-      "image": "workshop-ros.jpg"
+      "image": "workshop-ros.jpg",
+      "category": "workshop"
     },
     {
       "name": "LogicCraft Workshop (Workshop 2 - PLC)",
@@ -353,7 +359,8 @@ const eventData = {
         "SACHIN S"
       ],
       "faculty_coordinator": "Ms.CH.PRIYANKA",
-      "image": "workshop-plc.jpg"
+      "image": "workshop-plc.jpg",
+      "category": "workshop"
     },
     {
       "name": "TechTonic HackFest (Hack Fest)",
@@ -382,7 +389,8 @@ const eventData = {
         "RAMALINGAM J"
       ],
       "faculty_coordinator": "Ms.CH.PRIYANKA",
-      "image": "hack-fest.jpg"
+      "image": "hack-fest.jpg",
+      "category": "technical"
     },
     {
       "name": "InnoVision Expo (Project Expo)",
@@ -406,7 +414,8 @@ const eventData = {
         "VISHVA A"
       ],
       "faculty_coordinator": "Mr.S.THARMALINGAM",
-      "image": "project-expo.jpg"
+      "image": "project-expo.jpg",
+      "category": "technical"
     },
     {
       "name": "AeroVista Expo (Drone Expo)",
@@ -428,30 +437,99 @@ const eventData = {
         "HARISHWARAN"
       ],
       "faculty_coordinator": "Ms.S.PRIYADHARSHINI",
-      "image": "drone-expo.webp"
+      "image": "drone-expo.webp",
+      "category": "technical"
+
     }
   ]
 };
 
-// Render Event Cards
-function renderEvents() {
+// Render Event Cards with Filter Functionality
+function renderEvents(filter = "all") {
   const eventsGrid = document.getElementById("events-grid");
+  eventsGrid.innerHTML = ""; // Clear the grid before rendering
+  
   eventData.events.forEach((event) => {
-    const card = document.createElement("div");
-    card.className = "event-card floating";
-    card.innerHTML = `
-      <img src="images/events/${event.image}" alt="${event.name}" onerror="this.onerror=null;this.src='https://placehold.in/300x200@2x.png/dark';">
-      <h3>${event.name}</h3>
-      <p>${event.description}</p>
-      <p><strong>Faculty Coordinator:</strong> ${event.faculty_coordinator}</p>
-      <div class="learn-more-text">Click to know more</div>
-    `;
-    
-    // When clicked, navigate to a separate event details page (full details will be displayed there)
-    card.addEventListener("click", () => {
-      window.location.href = "event-details.html?event=" + encodeURIComponent(event.name);
-    });
-    
-    eventsGrid.appendChild(card);
+    // Check if the event should be rendered based on the filter
+    if (filter === "all" || event.category.toLowerCase() === filter) {
+      const card = document.createElement("div");
+      card.className = "event-card floating";
+      card.innerHTML = `
+        <img src="images/events/${event.image}" alt="${event.name}" onerror="this.onerror=null;this.src='https://placehold.in/300x200@2x.png/dark';">
+        <h3>${event.name}</h3>
+        <p>${event.description}</p>
+        <p><strong>Faculty Coordinator:</strong> ${event.faculty_coordinator}</p>
+        <div class="learn-more-text">Click to know more</div>
+      `;
+      
+      // When clicked, navigate to a separate event details page
+      card.addEventListener("click", () => {
+        window.location.href = "event-details.html?event=" + encodeURIComponent(event.name);
+      });
+      
+      eventsGrid.appendChild(card);
+    }
   });
 }
+
+// Initialize events and set up filter button listeners when DOM is ready
+document.addEventListener("DOMContentLoaded", function() {
+  // Render all events by default
+  renderEvents();
+  
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function() {
+      // Get the selected category from the button's data attribute
+      const selectedCategory = this.getAttribute("data-category"); // Use "data-category"
+      
+      // Optional: Highlight the active button
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      this.classList.add("active");
+      
+      // Re-render events based on the selected category
+      renderEvents(selectedCategory);
+    });
+  });
+});
+
+const filters = [
+  { name: "All", value: "all" },
+  { name: "Technical", value: "technical" },
+  { name: "Workshop", value: "workshop" },
+  { name: "Non Technical", value: "nontechnical" },
+];
+
+const filterContainer = document.querySelector(".filter-tabs");
+
+// Generate filter buttons dynamically
+filters.forEach((filter, index) => {
+  const button = document.createElement("button");
+  button.classList.add("filter-btn");
+  if (index === 0) button.classList.add("active"); // Make 'All' active by default
+  button.setAttribute("data-filter", filter.value);
+  button.setAttribute("data-translate-value", `${index * 100}%`);
+  button.textContent = filter.name;
+
+  const listItem = document.createElement("li");
+  listItem.appendChild(button);
+  // filterContainer.appendChild(listItem);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      menuToggle.classList.toggle("active");
+      // Debug: log click event
+      console.log("Hamburger clicked");
+    });
+  } else {
+    console.error("Menu toggle or nav links not found");
+  }
+});

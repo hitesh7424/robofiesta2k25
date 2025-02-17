@@ -23,7 +23,7 @@
 
     <!-- Loader -->
     <!-- DotLottie Loader (Full-Screen) -->
-    <div class="loader" id="loader">
+    <div class="loader" id="loader"> 
       <dotlottie-player
         src="https://lottie.host/b4b4708b-8fd7-4bbd-8050-78606f5f69ce/rLO2PzvWqz.lottie"
         background="transparent"
@@ -40,26 +40,36 @@
       type="module"
     ></script>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <!-- Logo Container: Two logos side by side -->
-        <div class="logo-container">
-          <a href="#" target="_blank" class="event-logo">
-            <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
-          </a>
-          <a href="#" target="_blank" class="college-logo">
-            <img src="images/college-logo.png" alt="College Logo" />
-          </a>
-        </div>
-        <div class="nav-links">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#events" class="nav-link">Events</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-      </div>
-    </nav>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container">
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <a href="#" class="event-logo">
+        <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
+      </a>
+      <a href="#" class="college-logo">
+        <img src="images/college-logo.png" alt="College Logo" />
+      </a>
+    </div>
+    <!-- Hamburger Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#events" class="nav-link">Events</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -184,11 +194,23 @@
       </div>
     </section>
 
+    
+    
+
+
     <!-- Events Section -->
     <section class="events" id="events">
       <div class="container">
         <span class="section-tag">What's Happening</span>
         <h2 class="section-title">Featured Events</h2>
+
+        <div id="filter-buttons" class="center-align" style="margin-bottom: 20px;">
+          <button class="btn filter-btn" data-category="all">All</button>
+          <button class="btn filter-btn" data-category="workshop">Workshop</button>
+          <button class="btn filter-btn" data-category="technical">Technical</button>
+          <button class="btn filter-btn" data-category="nontechnical">Nontechnical</button>
+        </div>
+        <!-- Events Grid -->
         <div class="events-grid" id="events-grid">
           <!-- Event cards will be dynamically inserted here -->
         </div>
@@ -352,6 +374,17 @@
             </li>
             <li>
               <img
+                src="icons/whatsapp.png"
+                alt="Instagram Icon"
+                class="footer-icon"
+              /><a
+                href="#"
+                target="_blank"
+                >ROBO_FIESTA_2K25</a
+              >
+            </li>
+            <li>
+              <img
                 src="icons/location.png"
                 alt="Location Icon"
                 class="footer-icon"
@@ -384,7 +417,6 @@
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#registration">Registration</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
