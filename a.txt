@@ -1,21 +1,73 @@
-
-About KVCET
-Karpaga Vinayaga College of Engineering and Technology (KVCET) stands as a beacon of academic excellence and innovation. Established in 2001, our institution is dedicated to nurturing talent through state-of-the-art infrastructure, dynamic teaching methodologies, and a commitment to holistic development.
-
-With a vibrant campus life and industry-aligned curriculum, KVCET empowers students to transform challenges into opportunities and emerge as leaders in their chosen fields.
-
-
-
-Department of Robotics and Automation
-Our Department of Robotics and Automation pioneers a hands-on approach to learning, blending theoretical knowledge with practical application. Through cutting-edge labs and collaborative projects, we equip students with the skills to innovate and excel in emerging technologies.
-
-Emphasizing research, creativity, and industry partnerships, our department is committed to driving forward the future of robotics and automation.
-
-
-
-About Robofiesta 2K25
-Robofiesta 2K25 is our flagship event that celebrates technological ingenuity and creative excellence. Experience an immersive blend of interactive workshops, live robotics demonstrations, and competitive challenges designed to ignite innovation and inspire future leaders.
-
-Robofiesta 2K25 brings together innovators and technology enthusiasts from across the nation.
-
-The event provides a platform to network, learn, and explore emerging trends in robotics.
+        <!-- Student Coordinators -->
+        <div class="coordinator-group student-group">
+          <h3 class="group-title">Student Coordinators</h3>
+          <div class="coordinator-cards">
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_john.png"
+                  alt="John Peter D"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>John Peter D</h4>
+                <p>IV Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_deepika.png"
+                  alt="Deepika S"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/girl';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Deepika S</h4>
+                <p>III Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_ashvath.png"
+                  alt="Ashvath K"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Ashvath K</h4>
+                <p>III Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_gokul.png"
+                  alt="Gokul G"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/boy';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Gokul G</h4>
+                <p>II Year</p>
+              </div>
+            </div>
+            <div class="coordinator-card new-design">
+              <div class="avatar-wrapper">
+                <img
+                  src="images/student_shaheni.png"
+                  alt="Shaheni S"
+                  onerror="this.onerror=null;this.src='https://avatar.iran.liara.run/public/girl';"
+                />
+              </div>
+              <div class="coordinator-details">
+                <h4>Shaheni S</h4>
+                <p>II Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

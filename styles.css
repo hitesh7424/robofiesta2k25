@@ -508,7 +508,7 @@ body {
 
 .coordinators .section-title {
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--color-primary);
   margin-bottom: 2rem;
@@ -532,7 +532,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* Student Coordinators: Single Row with Horizontal Scroll */
@@ -545,7 +545,7 @@ body {
 /* New Design: Coordinator Card with 3D Overlapping Avatar */
 .coordinator-card.new-design {
   position: relative;
-  background: var(--card-bg);
+  /* background: var(--card-bg); */
   border-radius: 3em;
   /* padding: 1rem 1rem 1rem; */
   text-align: center;
@@ -566,14 +566,21 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: absolute;
-  top: -75px;       /* Negative offset to overlap */
+  top: -100px;   /*    Negative offset to overlap*/
   left: 50%;
+  
   transform: translateX(-50%);
   background: transparent;
   transition: transform 0.3s ease;
   /* No border as requested */
+
+   /* For browsers that support the unprefixed property */
+   mask-image: radial-gradient(ellipse at center, rgb(255, 0, 0) 45%, transparent 100%);
+  
+   /* For WebKit-based browsers (Safari, older Chrome versions) */
+   -webkit-mask-image: radial-gradient(ellipse at center, rgb(255, 0, 0) 45%, transparent 100%);
 }
 
 .avatar-wrapper img {
@@ -585,7 +592,7 @@ body {
 }
 
 .coordinator-card.new-design:hover .avatar-wrapper {
-  transform: translateX(-50%) scale(1.1) translateY(-10px) rotate(3deg);
+  transform: translateX(-50%) scale(1.1) translateY(-10px) rotate(-3deg);
 }
 
 /* Coordinator Details (Text below the overlapping avatar) */
@@ -595,18 +602,30 @@ body {
 
 .coordinator-details h4 {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  text-wrap-mode: nowrap;
   color: var(--color-primary);
   text-shadow: 0 0 8px var(--color-primary);
 }
 
+.coordinator-details a {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  opacity: 0.85;
+  margin: 0.25rem 0;
+  text-decoration: none;
+}
 .coordinator-details p {
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--color-text);
   opacity: 0.85;
   margin: 0.25rem 0;
+  display: flex;
+  align-items: center;    /* vertically centers the items */
+  justify-content: center; /* horizontally centers the items */
 }
 
 
@@ -838,6 +857,8 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 20px var(--card-shadow);
   cursor: pointer;
+  max-width: 300px;
+
   flex: 1 1 300px;  /* Ensure each card takes at least 300px width */
   min-height: 400px;  /* Set a minimum height for consistency */
   display: flex;
@@ -907,6 +928,16 @@ body {
   font-size: 1.75rem;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.event-card:hover h3 {
+  font-family: var(--font-display);
+  /* font-size: 2rem; */
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  display: inline-block;       /* Required for transform scaling */
+  transform: scale(1.1);       /* Scales the element by 20% */
 }
 
 .event-card p {

@@ -20,31 +20,33 @@
     <!-- <div class="custom-cursor"></div> -->
 
     <!-- Loader -->
-<!-- DotLottie Loader (Full-Screen) -->
-<div class="loader" id="loader">
-  <dotlottie-player
-    src="https://lottie.host/b4b4708b-8fd7-4bbd-8050-78606f5f69ce/rLO2PzvWqz.lottie"
-    background="transparent"
-    speed="1"
-    style="width: 25rem; height: 25rem;"
-    loop
-    autoplay
-  ></dotlottie-player>
-</div>
+    <!-- DotLottie Loader (Full-Screen) -->
+    <div class="loader" id="loader">
+      <dotlottie-player
+        src="https://lottie.host/b4b4708b-8fd7-4bbd-8050-78606f5f69ce/rLO2PzvWqz.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 25rem; height: 25rem"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </div>
 
-<!-- Include DotLottie Script -->
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-
+    <!-- Include DotLottie Script -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
 
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container">
         <!-- Logo Container: Two logos side by side -->
         <div class="logo-container">
-          <a href="index.html" class="event-logo">
+          <a href="#" target="_blank" class="event-logo">
             <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
           </a>
-          <a href="https://www.kvcet.edu" class="college-logo">
+          <a href="#" target="_blank" class="college-logo">
             <img src="images/college-logo.png" alt="College Logo" />
           </a>
         </div>
@@ -57,39 +59,33 @@
       </div>
     </nav>
 
-    
-
     <!-- Hero Section -->
     <section class="hero">
       <!-- Particle.js container -->
       <div id="particles-js"></div>
       <div class="container">
         <div class="hero-content">
-         
           <!-- basic logo of event for hero -->
           <div class="rf-main" id="hhome">
-            <svg class = "svgs" viewBox="0 0 960 300">
-                <symbol id="s-text">
-                  <text text-anchor="middle" x="50%" y="80%">ROBOFIESTA 2K25</text>
-                  
-                </symbol>
-              
-                <g class = "g-ants">
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-              </svg>
-        </div>
-           <!-- end of logo -->
+            <svg class="svgs" viewBox="0 0 960 300">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">
+                  ROBOFIESTA 2K25
+                </text>
+              </symbol>
 
+              <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+          </div>
+          <!-- end of logo -->
 
-          
-          <p class="hero-description">
-            Welcome to the Future of Robotics
-          </p>
+          <p class="hero-description">Welcome to the Future of Robotics</p>
 
           <!-- Fancy Neon Countdown -->
           <div id="countdown">
@@ -186,17 +182,16 @@
       </div>
     </section>
 
-<!-- Events Section -->
-<section class="events" id="events">
-  <div class="container">
-    <span class="section-tag">What's Happening</span>
-    <h2 class="section-title">Featured Events</h2>
-    <div class="events-grid" id="events-grid">
-      <!-- Event cards will be dynamically inserted here -->
-    </div>
-  </div>
-</section>
-
+    <!-- Events Section -->
+    <section class="events" id="events">
+      <div class="container">
+        <span class="section-tag">What's Happening</span>
+        <h2 class="section-title">Featured Events</h2>
+        <div class="events-grid" id="events-grid">
+          <!-- Event cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
 
     <!-- Coordinators Section -->
     <section id="coordinators" class="coordinators">
@@ -217,7 +212,14 @@
               </div>
               <div class="coordinator-details">
                 <h4>Mr. S. Tharmalingam</h4>
-                <p>Staff Coordinator</p>
+                <p>
+                  <img
+                    src="icons/phone.png"
+                    alt="Instagram Icon"
+                    class="footer-icon"
+                  />
+                  <a href="tel:+919876543219">+91 9876543219</a>
+                </p>
               </div>
             </div>
             <div class="coordinator-card new-design">
@@ -230,7 +232,14 @@
               </div>
               <div class="coordinator-details">
                 <h4>Ms. Ch. Priyanka</h4>
-                <p>Staff Coordinator</p>
+                <p>
+                  <img
+                    src="icons/phone.png"
+                    alt="Instagram Icon"
+                    class="footer-icon"
+                  />
+                  <a href="tel:+919876543219">+91 9876543219</a>
+                </p>
               </div>
             </div>
           </div>
