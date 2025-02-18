@@ -198,7 +198,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Mr.S.THARMALINGAM",
       "image": "line-following-robot.jpg",
-      "category": "technical"
+      "category": "technical",
+      id: 3,
+    title: "Line Following Robot",
+    category: "technical",
+    date: "30-03-2025",
+    time: "10:00 AM - 4:00 PM",
+    eventType: "Offline",
+    location: "Robotics Arena",
+    description: "An autonomous robot navigates a track using sensors to follow a black line with precision.",
+    fullDescription: "Build an autonomous robot that follows a black line precisely using IR sensors and AI-based navigation techniques.",
+    trending: true,
+    image: "line-following-robot.jpg",
+    isBookmarked: false,
+    link: "event-details.html?id=1",
+    registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+    price: 400,
+    prizePool: 15000,
+    eventParticipationType: "Group"
     },
     {
       "name": "Sumo Titans (Sumo Bot)",
@@ -222,7 +239,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.M.VENNILA",
       "image": "sumo-expo.webp",
-      "category": "technical"
+      "category": "technical",
+      id: 9,
+    title: "Sumo Bot",
+    category: "technical",
+    date: "30-03-2025",
+    time: "10:00 AM - 4:00 PM",
+    eventType: "Offline",
+    location: "Battle Zone",
+    description: "Two robots face off in a sumo ring, attempting to push each other out using strategic maneuvers.",
+    fullDescription: "Compete with your sumo bot to push your opponent out of the ring using intelligent design and tactics.",
+    trending: true,
+    image: "sumo-expo.webp",
+    isBookmarked: false,
+    link: "event-details.html?id=2",
+    registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+    price: 400,
+    prizePool: 15000,
+    eventParticipationType: "Group"
     },
     {
       "name": "Circuit Labyrinth (Robo Maze)",
@@ -245,7 +279,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Mr.J.SRINIVAS",
       "image": "robo-maze.webp",
-      "category": "technical"
+      "category": "technical",
+      id: 6,
+      title: "Robo Maze",
+      category: "technical",
+      date: "30-03-2025",
+      time: "10:00 AM - 4:00 PM",
+      eventType: "Offline",
+      location: "Tech Lab",
+      description: "A robotic challenge where bots autonomously navigate a complex maze to find the fastest exit route.",
+      fullDescription: "Program your robot to autonomously navigate a complex maze using AI and pathfinding algorithms.",
+      trending: false,
+      image: "robo-maze.webp",
+      isBookmarked: false,
+      link: "event-details.html?id=3",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 450,
+      prizePool: 10000,
+      eventParticipationType: "Group"
     },
     {
       "name": "Cyber Soccer Clash (Robo Soccer)",
@@ -268,7 +319,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.M.VENNILA",
       "image": "robo-soccer.webp",
-      "category": "technical"
+      "category": "technical",
+      id: 8,
+      title: "Robo Soccer",
+      category: "technical",
+      date: "30-03-2025",
+      time: "11:00 AM - 5:00 PM",
+      eventType: "Offline",
+      location: "Sports Arena",
+      description: "Autonomous robots compete in a thrilling game of soccer, showcasing teamwork and AI-driven strategies.",
+      fullDescription: "Build and program a team of robots to play soccer using AI strategies and autonomous movement.",
+      trending: true,
+      image: "robo-soccer.webp",
+      isBookmarked: false,
+      link: "event-details.html?id=4",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 600,
+      prizePool: 25000,
+      eventParticipationType: "Group"
     },
     {
       "name": "Velocity Vanguard (Robo Race)",
@@ -291,7 +359,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.S.PRIYADHARSHINI",
       "image": "robo-race.webp",
-      "category": "technical"
+      "category": "technical",
+      id: 7,
+      title: "Robo Race",
+      category: "technical",
+      date: "30-03-2025",
+      time: "10:00 AM - 3:00 PM",
+      eventType: "Offline",
+      location: "Race Track",
+      description: "High-speed autonomous robots compete on a winding track, testing speed, control, and AI navigation.",
+      fullDescription: "Design and build high-speed robots that can autonomously race and complete a challenging track.",
+      trending: false,
+      image: "robo-race.webp",
+      isBookmarked: false,
+      link: "event-details.html?id=5",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 500,
+      prizePool: 18000,
+      eventParticipationType: "Group"
     },
     {
       "name": "Ideathon (Paper Presentation)",
@@ -314,7 +399,25 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.CH.PRIYANKA",
       "image": "paper-presentation.jpg",
-      "category": "technical"
+      "category": "technical",
+      id: 5,
+      title: "Paper Presentation",
+      category: "technical",
+      date: "30-03-2025",
+      time: "11:00 AM - 4:00 PM",
+      eventType: "Offline",
+      location: "Conference Hall",
+      description: "Participants showcase their research and innovative ideas in front of industry experts and judges.",
+      fullDescription: "Submit your research papers and present your innovative ideas to an esteemed panel of judges and professionals.",
+      trending: false,
+      image: "paper-presentation.jpg",
+      isBookmarked: false,
+      link: "event-details.html?id=6",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 250,
+      prizePool: 8000,
+      eventParticipationType: "Individual"
+
     },
     {
       "name": "ROSolution Workshop (Workshop 1 - ROS)",
@@ -337,7 +440,25 @@ const eventData = {
       ],
       "faculty_coordinator": "Mr.S.THARMALINGAM",
       "image": "workshop-ros.jpg",
-      "category": "workshop"
+      "category": "workshop",
+      id: 10,
+      title: "Workshop 1 - ROS",
+      category: "workshop",
+      date: "30-03-2025",
+      time: "9:30 AM - 1:30 PM",
+      eventType: "Workshop",
+      location: "Lab 1",
+      description: "A hands-on workshop on Robot Operating System (ROS), covering autonomous robotics development.",
+      fullDescription: "Learn about ROS and how to develop autonomous robots using one of the most powerful frameworks available today.",
+      trending: true,
+      image: "workshop-ros.jpg",
+      isBookmarked: false,
+      link: "event-details.html?id=7",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 300,
+      prizePool: 0,
+      eventParticipationType: "Individual"
+
     },
     {
       "name": "LogicCraft Workshop (Workshop 2 - PLC)",
@@ -360,7 +481,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.CH.PRIYANKA",
       "image": "workshop-plc.jpg",
-      "category": "workshop"
+      "category": "workshop",
+      id: 11,
+      title: "Workshop 2 - PLC",
+      category: "workshop",
+      date: "30-03-2025",
+      time: "10:00 AM - 2:00 PM",
+      eventType: "Workshop",
+      location: "Lab 2",
+      description: "Learn industrial automation with Programmable Logic Controllers (PLCs) through real-world applications.",
+      fullDescription: "Get hands-on experience with PLCs and learn industrial automation techniques used in modern manufacturing.",
+      trending: false,
+      image: "workshop-plc.jpg",
+      isBookmarked: false,
+      link: "event-details.html?id=8",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 350,
+      prizePool: 0,
+      eventParticipationType: "Individual"
     },
     {
       "name": "TechTonic HackFest (Hack Fest)",
@@ -390,7 +528,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.CH.PRIYANKA",
       "image": "hack-fest.jpg",
-      "category": "technical"
+      "category": "technical",
+      id: 2,
+      title: "Hack Fest",
+      category: "technical",
+      date: "30-03-2025",
+      time: "9:00 AM - 3:00 PM",
+      eventType: "Offline",
+      location: "Innovation Hub",
+      description: "A 24-hour coding marathon where developers solve real-world tech challenges and build innovative solutions.",
+      fullDescription: "Join a 24-hour hackathon to showcase your programming skills, solve real-world challenges, and win exciting prizes.",
+      trending: true,
+      image: "hack-fest.jpg",
+      isBookmarked: false,
+      link: "event-details.html?id=9",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 500,
+      prizePool: 20000,
+      eventParticipationType: "Group"
     },
     {
       "name": "InnoVision Expo (Project Expo)",
@@ -415,7 +570,24 @@ const eventData = {
       ],
       "faculty_coordinator": "Mr.S.THARMALINGAM",
       "image": "project-expo.jpg",
-      "category": "technical"
+      "category": "technical",
+      id: 4,
+      title: "Project Expo",
+      category: "technical",
+      date: "30-03-2025",
+      time: "10:00 AM - 6:00 PM",
+      eventType: "Offline",
+      location: "Exhibition Hall",
+      description: "A showcase of groundbreaking projects in robotics, AI, and engineering by students and professionals.",
+      fullDescription: "Present your innovative projects to experts, industry leaders, and a vast audience in this grand project exhibition.",
+      trending: true,
+      image: "project-expo.jpg",
+      isBookmarked: false,
+      link: "event-details.html?id=10",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 300,
+      prizePool: 12000,
+      eventParticipationType: "Group"
     },
     {
       "name": "AeroVista Expo (Drone Expo)",
@@ -438,7 +610,25 @@ const eventData = {
       ],
       "faculty_coordinator": "Ms.S.PRIYADHARSHINI",
       "image": "drone-expo.webp",
-      "category": "technical"
+      "category": "technical",
+      id: 1,
+      title: "Drone Expo",
+      category: "technical",
+      date: "30-03-2025",
+      time: "10:00 AM - 5:00 PM",          // Added event time
+      eventType: "Offline",               // Added event type
+      location: "Outdoor Arena",
+      description: "A thrilling showcase of cutting-edge drone technology, featuring live demonstrations and aerial stunts.",
+      fullDescription: "Experience live demonstrations of the latest drone technology, aerial stunts, and innovations in UAV systems.",
+      trending: false,
+      image: "drone-expo.webp",
+      isBookmarked: false,
+      link: "event-details.html?id=11",
+      registerLink: "https://forms.gle/9fENE8tCXaUry3pP7",
+      price: 200,
+      prizePool: 5000,
+      eventParticipationType: "Individual",
+      coordinatorName: "1"
 
     }
   ]
@@ -448,7 +638,7 @@ const eventData = {
 function renderEvents(filter = "all") {
   const eventsGrid = document.getElementById("events-grid");
   eventsGrid.innerHTML = ""; // Clear the grid before rendering
-  
+
   eventData.events.forEach((event) => {
     // Check if the event should be rendered based on the filter
     if (filter === "all" || event.category.toLowerCase() === filter) {
@@ -461,16 +651,75 @@ function renderEvents(filter = "all") {
         <p><strong>Faculty Coordinator:</strong> ${event.faculty_coordinator}</p>
         <div class="learn-more-text">Click to know more</div>
       `;
-      
-      // When clicked, navigate to a separate event details page
+
+      // Add click event to open the modal with event details
       card.addEventListener("click", () => {
-        window.location.href = "event-details.html?event=" + encodeURIComponent(event.name);
+        openEventModal(event);
       });
-      
+
       eventsGrid.appendChild(card);
     }
   });
 }
+
+
+// Function to open the event modal with detailed information
+function openEventModal(eventData) {
+  // Disable background scrolling
+  document.body.style.overflow = "hidden";
+
+  // Create the modal container
+  const modal = document.createElement("div");
+  modal.classList.add("event-modal");
+
+  // Build modal content using eventData
+  modal.innerHTML = `
+    <div class="modal-background" style="background-image: url('images/events/${eventData.image}');"></div>
+    <div class="modal-foreground">
+      <span class="modal-close">&times;</span>
+      <div class="modal-image-container">
+        <img class="modal-image" src="images/events/${eventData.image}" alt="${eventData.name}" onerror="this.onerror=null; this.src='https://placehold.in/300x200@2x.png/dark';">
+      </div>
+      <h1 class="modal-title">${eventData.name}</h1>
+      <div class="modal-register">
+        <a class="register-button" href="${eventData.registerLink}" target="_blank">Register | ₹${eventData.price}</a>
+        <div class="price"><strong>Prize Pool:</strong> ₹${eventData.prizePool}</div>
+      </div>
+      <div class="modal-details-container">
+        <div class="modal-details-grid">
+          <div class="detail-item"><strong>Participation:</strong> <br />${eventData.participationType}</div>
+          <div class="detail-item"><strong>Date:</strong> <br />${eventData.date}</div>
+          <div class="detail-item"><strong>Event Type:</strong> <br />${eventData.eventType}</div>
+          <div class="detail-item"><strong>Time:</strong> <br />${eventData.time}</div>
+        </div>
+        <p class="modal-description"><strong>Description:</strong><br>${eventData.fullDescription}</p>
+        <p class="modal-description"><strong>Faculty Coordinator:</strong><br>${eventData.facultyCoordinator}</p>
+        <p class="modal-description"><strong>Student Coordinators:</strong><br>${eventData.studentCoordinators}</p>
+      </div>
+    </div>
+  `;
+
+  // Append the modal to the document body
+  document.body.appendChild(modal);
+
+  // Function to close the modal and restore scrolling
+  function closeModal() {
+    document.body.removeChild(modal);
+    document.body.style.overflow = "auto";
+  }
+
+  // Close modal when clicking the close button
+  modal.querySelector('.modal-close').addEventListener('click', closeModal);
+
+  // Close modal when clicking outside the modal foreground
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+}
+
+
 
 // Initialize events and set up filter button listeners when DOM is ready
 document.addEventListener("DOMContentLoaded", function() {
@@ -533,3 +782,57 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Menu toggle or nav links not found");
   }
 });
+
+// =================================================== MODAL POP UP FUNCTION ==================================================
+function openEventModal(eventData) {
+  // Disable background scrolling
+  document.body.style.overflow = "hidden";
+  
+  // Create the modal container
+  const modal = document.createElement("div");
+  modal.classList.add("event-modal");
+  
+  // Build modal content using eventData from JSON
+  modal.innerHTML = `
+    <div class="modal-background" style="background-image: url('images/events/${eventData.image}');"></div>
+    <div class="modal-foreground">
+      <span class="modal-close">&times;</span>
+      <div class="modal-image-container">
+        <img class="modal-image" src="images/events/${eventData.image}" alt="${eventData.title}" onerror="this.onerror=null; this.src='images/placeholder.jpg';">
+      </div>
+      <h1 class="modal-title">${eventData.title}</h1>
+      <div class="modal-register">
+        <a class="register-button" href="${eventData.registerLink}" target="_blank">Register | ₹${eventData.price}</a>
+        <div class="price"><strong>Prize Pool:</strong> ₹${eventData.prizePool}</div>
+      </div>
+      <div class="modal-details-container">
+        <div class="modal-details-grid">
+          <div class="detail-item"><strong>Participation:</strong> <br />${eventData.eventParticipationType}</div>
+          <div class="detail-item"><strong>Date:</strong> <br />${eventData.date}</div>
+          <div class="detail-item"><strong>Event Type:</strong> <br />${eventData.eventType}</div>
+          <div class="detail-item"><strong>Time:</strong> <br />${eventData.time}</div>
+        </div>
+        <p class="modal-description"><strong>Description:</strong><br>${eventData.fullDescription}</p>
+      </div>
+    </div>
+  `;
+  
+  // Append the modal to the document body
+  document.body.appendChild(modal);
+  
+  // Function to close the modal and restore scrolling
+  function closeModal() {
+    document.body.removeChild(modal);
+    document.body.style.overflow = "auto";
+  }
+  
+  // Close modal when clicking the close button
+  modal.querySelector('.modal-close').addEventListener('click', closeModal);
+  
+  // Close modal when clicking outside the modal foreground
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+}

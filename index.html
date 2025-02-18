@@ -18,6 +18,10 @@
   <body>
           <!-- Particle.js container -->
           <div id="particles-js"></div>
+          <audio autoplay loop id="background-audio">
+            <source src="Coders Assemble.mp3" type="audio/mp3">
+            Your browser does not support HTML5 audio.
+        </audio>
     <!-- Custom Cursor -->
     <!-- <div class="custom-cursor"></div> -->
 
@@ -217,6 +221,34 @@
       </div>
     </section>
 
+    <!-- Event Detail Modal -->
+<div id="eventModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+      <h2 class="modal-title"></h2>
+    </div>
+    <div class="modal-body">
+      <img src="" alt="Event Image" class="event-image">
+      <p class="event-date"></p>
+      <p class="event-time"></p>
+      <p class="event-type"></p>
+      <p class="event-category"></p>
+      <p class="event-price"></p>
+      <p class="event-prize-pool"></p>
+      <p class="event-description"></p>
+      <p class="faculty-coordinator"></p>
+      <p><strong>Student Coordinators:</strong></p>
+      <ul class="student-coordinators"></ul>
+      <button class="register-btn">Register Now</button>
+    </div>
+    <div class="modal-footer">
+      <h3>Contact us for more information</h3>
+    </div>
+  </div>
+</div>
+
+
     <!-- Coordinators Section -->
     <section id="coordinators" class="coordinators">
       <div class="container">
@@ -351,7 +383,7 @@
         <div class="footer-section footer-contact">
           <h3>Contact</h3>
           <ul>
-            <li>
+            <!-- <li>
               <img src="icons/email.png" alt="Email Icon" class="footer-icon" />
               <a href="mailto:kvcet@live.com">kvcet@live.com</a>
             </li>
@@ -360,6 +392,17 @@
               <a href="tel:04471565297">044-7156 5297</a>
               <pre> | </pre>
               <a href="tel:+91-9842069933">+91-9842069933</a>
+            </li> -->
+            <li>
+              <img
+                src="icons/linkedin.png"
+                alt="LinkedIn"
+                class="footer-icon"
+              /><a
+                href="https://www.linkedin.com/in/kvcet-robotics-6438a82b2"
+                target="_blank"
+                >Kvcet robotics</a
+              >
             </li>
             <li>
               <img
@@ -383,7 +426,7 @@
                 >ROBO_FIESTA_2K25</a
               >
             </li>
-            <li>
+            <!-- <li>
               <img
                 src="icons/location.png"
                 alt="Location Icon"
@@ -392,7 +435,8 @@
               Karpaga Vinayaga College of Engineering and Technology<br />
               G.S.T Road, Chinna Kolambakkam,<br />
               Madhuranthagam (T.k), Chengalpattu (D.t)-603308
-            </li>
+            </li> -->
+            
           </ul>
         </div>
 
