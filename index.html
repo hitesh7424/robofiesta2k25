@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="logo.css" />
   </head>
   <body>
-          <!-- Particle.js container -->
-          <div id="particles-js"></div>
-          <!-- <audio autoplay loop id="background-audio">
+    <!-- Particle.js container -->
+    <div id="particles-js"></div>
+    <!-- <audio autoplay loop id="background-audio">
             <source src="Coders Assemble.mp3" type="audio/mp3">
             Your browser does not support HTML5 audio.
         </audio> -->
@@ -27,7 +27,19 @@
 
     <!-- Loader -->
     <!-- DotLottie Loader (Full-Screen) -->
-    <div class="loader" id="loader"> 
+
+    
+    <div class="loader" id="loader">
+    <dotlottie-player
+      src="https://lottie.host/0a0b8ed0-efb0-4056-87a4-1f4645313879/095XeQrjXU.lottie"
+      background="transparent"
+        speed="1"
+        style="width: 25rem; height: 25rem"
+        loop
+        autoplay
+      ></dotlottie-player> </div></div>
+    
+    <!-- <div class="loader" id="loader">
       <dotlottie-player
         src="https://lottie.host/b4b4708b-8fd7-4bbd-8050-78606f5f69ce/rLO2PzvWqz.lottie"
         background="transparent"
@@ -36,7 +48,7 @@
         loop
         autoplay
       ></dotlottie-player>
-    </div>
+    </div> -->
 
     <!-- Include DotLottie Script -->
     <script
@@ -44,36 +56,33 @@
       type="module"
     ></script>
 
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="container">
-    <!-- Logo Container -->
-    <div class="logo-container">
-      <a href="#" class="event-logo">
-        <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
-      </a>
-      <a href="#" class="college-logo">
-        <img src="images/college-logo.png" alt="College Logo" />
-      </a>
-    </div>
-    <!-- Hamburger Menu Toggle -->
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <!-- Navigation Links -->
-    <div class="nav-links">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#events" class="nav-link">Events</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-  </div>
-</nav>
-
-
-
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo Container -->
+        <div class="logo-container">
+          <a href="#" class="event-logo">
+            <img src="images/event-logo.png" alt="Robofiesta 2k25 Logo" />
+          </a>
+          <a href="#" class="college-logo">
+            <img src="images/college-logo.png" alt="College Logo" />
+          </a>
+        </div>
+        <!-- Hamburger Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -198,21 +207,27 @@
       </div>
     </section>
 
-    
-    
-
-
     <!-- Events Section -->
     <section class="events" id="events">
       <div class="container">
         <span class="section-tag">What's Happening</span>
         <h2 class="section-title">Featured Events</h2>
 
-        <div id="filter-buttons" class="center-align" style="margin-bottom: 20px;">
+        <div
+          id="filter-buttons"
+          class="center-align"
+          style="margin-bottom: 20px"
+        >
           <button class="btn filter-btn" data-category="all">All</button>
-          <button class="btn filter-btn" data-category="workshop">Workshop</button>
-          <button class="btn filter-btn" data-category="technical">Technical</button>
-          <button class="btn filter-btn" data-category="nontechnical">Nontechnical</button>
+          <button class="btn filter-btn" data-category="workshop">
+            Workshop
+          </button>
+          <button class="btn filter-btn" data-category="technical">
+            Technical
+          </button>
+          <button class="btn filter-btn" data-category="nontechnical">
+            Nontechnical
+          </button>
         </div>
         <!-- Events Grid -->
         <div class="events-grid" id="events-grid">
@@ -222,32 +237,31 @@
     </section>
 
     <!-- Event Detail Modal -->
-<div id="eventModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="modal-header">
-      <h2 class="modal-title"></h2>
+    <div id="eventModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <h2 class="modal-title"></h2>
+        </div>
+        <div class="modal-body">
+          <img src="" alt="Event Image" class="event-image" />
+          <p class="event-date"></p>
+          <p class="event-time"></p>
+          <p class="event-type"></p>
+          <p class="event-category"></p>
+          <p class="event-price"></p>
+          <p class="event-prize-pool"></p>
+          <p class="event-description"></p>
+          <p class="faculty-coordinator"></p>
+          <p><strong>Student Coordinators:</strong></p>
+          <ul class="student-coordinators"></ul>
+          <button class="register-btn">Register Now</button>
+        </div>
+        <div class="modal-footer">
+          <h3>Contact us for more information</h3>
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <img src="" alt="Event Image" class="event-image">
-      <p class="event-date"></p>
-      <p class="event-time"></p>
-      <p class="event-type"></p>
-      <p class="event-category"></p>
-      <p class="event-price"></p>
-      <p class="event-prize-pool"></p>
-      <p class="event-description"></p>
-      <p class="faculty-coordinator"></p>
-      <p><strong>Student Coordinators:</strong></p>
-      <ul class="student-coordinators"></ul>
-      <button class="register-btn">Register Now</button>
-    </div>
-    <div class="modal-footer">
-      <h3>Contact us for more information</h3>
-    </div>
-  </div>
-</div>
-
 
     <!-- Coordinators Section -->
     <section id="coordinators" class="coordinators">
@@ -302,7 +316,7 @@
         </div>
 
         <!-- Student Coordinators -->
-        <div class="coordinator-group student-group">
+        <!-- <div class="coordinator-group student-group">
           <h3 class="group-title">Student Coordinators</h3>
           <div class="coordinator-cards">
             <div class="coordinator-card new-design">
@@ -370,11 +384,10 @@
                 <p>II Year</p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer Section -->
     <footer id="contact" class="footer">
@@ -420,11 +433,7 @@
                 src="icons/whatsapp.png"
                 alt="Instagram Icon"
                 class="footer-icon"
-              /><a
-                href="#"
-                target="_blank"
-                >ROBO_FIESTA_2K25</a
-              >
+              /><a href="#" target="_blank">ROBO_FIESTA_2K25</a>
             </li>
             <!-- <li>
               <img
@@ -436,7 +445,6 @@
               G.S.T Road, Chinna Kolambakkam,<br />
               Madhuranthagam (T.k), Chengalpattu (D.t)-603308
             </li> -->
-            
           </ul>
         </div>
 
