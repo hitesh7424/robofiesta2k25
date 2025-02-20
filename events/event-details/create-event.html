@@ -10,7 +10,7 @@
       background: #f0f0f0;
       padding: 20px;
     }
-    h1 {
+    h1, h2 {
       text-align: center;
     }
     form {
@@ -33,6 +33,7 @@
       padding: 8px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      box-sizing: border-box;
     }
     button {
       padding: 10px 20px;
@@ -45,10 +46,25 @@
     button:hover {
       background: #0056b3;
     }
+    .coordinator-group {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      background: #fafafa;
+    }
+    .remove-btn {
+      background: #dc3545;
+      margin-top: 5px;
+    }
     textarea#jsonOutput {
       width: 100%;
       height: 200px;
       margin-top: 20px;
+    }
+    .add-btn {
+      background: #28a745;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -110,14 +126,21 @@
         <option value="Workshop">Workshop</option>
       </select>
     </div>
-    <div>
-      <label for="facultyCoordinator">Faculty Coordinator(s) (comma separated):</label>
-      <input type="text" id="facultyCoordinator" placeholder="e.g. Ms. M. Vennila" required>
-    </div>
-    <div>
-      <label for="studentCoordinator">Student Coordinator(s) (comma separated):</label>
-      <input type="text" id="studentCoordinator" placeholder="e.g. Akash R, Pratap A" required>
-    </div>
+    
+    <!-- Faculty Coordinators Section -->
+    <fieldset>
+      <legend>Faculty Coordinators</legend>
+      <div id="facultyContainer"></div>
+      <button type="button" class="add-btn" onclick="addFaculty()">Add Faculty Coordinator</button>
+    </fieldset>
+    
+    <!-- Student Coordinators Section -->
+    <fieldset>
+      <legend>Student Coordinators</legend>
+      <div id="studentContainer"></div>
+      <button type="button" class="add-btn" onclick="addStudent()">Add Student Coordinator</button>
+    </fieldset>
+    
     <div>
       <label for="image">Image URL:</label>
       <input type="text" id="image" placeholder="Image URL" required>
@@ -126,36 +149,7 @@
       <label for="rules">Rules (each on a new line):</label>
       <textarea id="rules" placeholder="Enter each rule on a new line" required></textarea>
     </div>
-    <fieldset>
-      <legend>Contact - Faculty</legend>
-      <div>
-        <label for="facultyName">Name:</label>
-        <input type="text" id="facultyName" required>
-      </div>
-      <div>
-        <label for="facultyEmail">Email:</label>
-        <input type="email" id="facultyEmail" required>
-      </div>
-      <div>
-        <label for="facultyPhone">Phone:</label>
-        <input type="text" id="facultyPhone" required>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Contact - Student</legend>
-      <div>
-        <label for="studentName">Name:</label>
-        <input type="text" id="studentName" required>
-      </div>
-      <div>
-        <label for="studentEmail">Email:</label>
-        <input type="email" id="studentEmail" required>
-      </div>
-      <div>
-        <label for="studentPhone">Phone:</label>
-        <input type="text" id="studentPhone" required>
-      </div>
-    </fieldset>
+    
     <div>
       <button type="button" onclick="generateJSON()">Generate JSON</button>
     </div>
@@ -167,6 +161,46 @@
   <button type="button" onclick="downloadJSON()">Download JSON</button>
 
   <script>
+    // Functions to add new coordinator fields
+    function addFaculty() {
+      const container = document.getElementById('facultyContainer');
+      const div = document.createElement('div');
+      div.className = 'coordinator-group';
+      div.innerHTML = `
+        <label>Faculty Name:</label>
+        <input type="text" class="facultyName" required>
+        <label>Faculty Email:</label>
+        <input type="email" class="facultyEmail" required>
+        <label>Faculty Phone:</label>
+        <input type="text" class="facultyPhone" required>
+        <button type="button" class="remove-btn" onclick="this.parentNode.remove()">Remove</button>
+      `;
+      container.appendChild(div);
+    }
+
+    function addStudent() {
+      const container = document.getElementById('studentContainer');
+      const div = document.createElement('div');
+      div.className = 'coordinator-group';
+      div.innerHTML = `
+        <label>Student Name:</label>
+        <input type="text" class="studentName" required>
+        <label>Student Email:</label>
+        <input type="email" class="studentEmail" required>
+        <label>Student Phone:</label>
+        <input type="text" class="studentPhone" required>
+        <button type="button" class="remove-btn" onclick="this.parentNode.remove()">Remove</button>
+      `;
+      container.appendChild(div);
+    }
+
+    // Add one default field for each coordinator type on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      addFaculty();
+      addStudent();
+    });
+
+    // Generate JSON based on form inputs
     function generateJSON() {
       const eventKey = document.getElementById('eventKey').value.trim();
       const name = document.getElementById('name').value.trim();
@@ -180,16 +214,28 @@
       const groupType = document.getElementById('groupType').value.trim();
       const eventType = document.getElementById('eventType').value;
       const category = document.getElementById('category').value;
-      const facultyCoordinator = document.getElementById('facultyCoordinator').value.split(',').map(item => item.trim()).filter(item => item);
-      const studentCoordinator = document.getElementById('studentCoordinator').value.split(',').map(item => item.trim()).filter(item => item);
       const image = document.getElementById('image').value.trim();
       const rules = document.getElementById('rules').value.split('\n').map(rule => rule.trim()).filter(rule => rule);
-      const facultyName = document.getElementById('facultyName').value.trim();
-      const facultyEmail = document.getElementById('facultyEmail').value.trim();
-      const facultyPhone = document.getElementById('facultyPhone').value.trim();
-      const studentName = document.getElementById('studentName').value.trim();
-      const studentEmail = document.getElementById('studentEmail').value.trim();
-      const studentPhone = document.getElementById('studentPhone').value.trim();
+
+      // Get faculty coordinator details (as an array of objects)
+      const facultyDivs = document.querySelectorAll('#facultyContainer .coordinator-group');
+      const facultyCoordinators = Array.from(facultyDivs).map(div => {
+        return {
+          name: div.querySelector('.facultyName').value.trim(),
+          email: div.querySelector('.facultyEmail').value.trim(),
+          phone: div.querySelector('.facultyPhone').value.trim()
+        };
+      });
+
+      // Get student coordinator details (as an array of objects)
+      const studentDivs = document.querySelectorAll('#studentContainer .coordinator-group');
+      const studentCoordinators = Array.from(studentDivs).map(div => {
+        return {
+          name: div.querySelector('.studentName').value.trim(),
+          email: div.querySelector('.studentEmail').value.trim(),
+          phone: div.querySelector('.studentPhone').value.trim()
+        };
+      });
 
       const eventJSON = {
         [eventKey]: {
@@ -204,22 +250,10 @@
           groupType,
           eventType,
           category,
-          facultyCoordinator,
-          studentCoordinator,
+          facultyCoordinator: facultyCoordinators,
+          studentCoordinator: studentCoordinators,
           image,
-          rules,
-          contact: {
-            faculty: {
-              name: facultyName,
-              email: facultyEmail,
-              phone: facultyPhone
-            },
-            student: {
-              name: studentName,
-              email: studentEmail,
-              phone: studentPhone
-            }
-          }
+          rules
         }
       };
 
