@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Event JSON</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    form div, fieldset {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    textarea#jsonOutput {
+      width: 100%;
+      height: 200px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Create Event JSON</h1>
+  <form id="eventForm">
+    <div>
+      <label for="eventKey">Event Key:</label>
+      <input type="text" id="eventKey" placeholder="e.g. robo-soccer" required>
+    </div>
+    <div>
+      <label for="name">Event Name:</label>
+      <input type="text" id="name" placeholder="Event Name" required>
+    </div>
+    <div>
+      <label for="shortDescription">Short Description:</label>
+      <textarea id="shortDescription" placeholder="Short Description" required></textarea>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" placeholder="Full Description" required></textarea>
+    </div>
+    <div>
+      <label for="date">Date:</label>
+      <input type="text" id="date" placeholder="e.g. March 22, 2025" required>
+    </div>
+    <div>
+      <label for="time">Time:</label>
+      <input type="text" id="time" placeholder="e.g. 10:30 AM - 11:30 AM" required>
+    </div>
+    <div>
+      <label for="venue">Venue:</label>
+      <input type="text" id="venue" placeholder="Venue" required>
+    </div>
+    <div>
+      <label for="registrationFee">Registration Fee:</label>
+      <input type="text" id="registrationFee" placeholder="Registration Fee" required>
+    </div>
+    <div>
+      <label for="prize">Prize:</label>
+      <input type="text" id="prize" placeholder="Prize" required>
+    </div>
+    <div>
+      <label for="groupType">Group Type:</label>
+      <input type="text" id="groupType" placeholder="e.g. Team (Minimum 2 Members)" required>
+    </div>
+    <div>
+      <label for="eventType">Event Type:</label>
+      <select id="eventType">
+        <option value="Online">Online</option>
+        <option value="Offline">Offline</option>
+      </select>
+    </div>
+    <div>
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="Technical">Technical</option>
+        <option value="Non-Technical">Non-Technical</option>
+        <option value="Workshop">Workshop</option>
+      </select>
+    </div>
+    <div>
+      <label for="facultyCoordinator">Faculty Coordinator(s) (comma separated):</label>
+      <input type="text" id="facultyCoordinator" placeholder="e.g. Ms. M. Vennila" required>
+    </div>
+    <div>
+      <label for="studentCoordinator">Student Coordinator(s) (comma separated):</label>
+      <input type="text" id="studentCoordinator" placeholder="e.g. Akash R, Pratap A" required>
+    </div>
+    <div>
+      <label for="image">Image URL:</label>
+      <input type="text" id="image" placeholder="Image URL" required>
+    </div>
+    <div>
+      <label for="rules">Rules (each on a new line):</label>
+      <textarea id="rules" placeholder="Enter each rule on a new line" required></textarea>
+    </div>
+    <fieldset>
+      <legend>Contact - Faculty</legend>
+      <div>
+        <label for="facultyName">Name:</label>
+        <input type="text" id="facultyName" required>
+      </div>
+      <div>
+        <label for="facultyEmail">Email:</label>
+        <input type="email" id="facultyEmail" required>
+      </div>
+      <div>
+        <label for="facultyPhone">Phone:</label>
+        <input type="text" id="facultyPhone" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Contact - Student</legend>
+      <div>
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required>
+      </div>
+      <div>
+        <label for="studentEmail">Email:</label>
+        <input type="email" id="studentEmail" required>
+      </div>
+      <div>
+        <label for="studentPhone">Phone:</label>
+        <input type="text" id="studentPhone" required>
+      </div>
+    </fieldset>
+    <div>
+      <button type="button" onclick="generateJSON()">Generate JSON</button>
+    </div>
+  </form>
+
+  <h2>Generated JSON</h2>
+  <textarea id="jsonOutput" readonly></textarea>
+  <br>
+  <button type="button" onclick="downloadJSON()">Download JSON</button>
+
+  <script>
+    function generateJSON() {
+      const eventKey = document.getElementById('eventKey').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const shortDescription = document.getElementById('shortDescription').value.trim();
+      const description = document.getElementById('description').value.trim();
+      const date = document.getElementById('date').value.trim();
+      const time = document.getElementById('time').value.trim();
+      const venue = document.getElementById('venue').value.trim();
+      const registrationFee = document.getElementById('registrationFee').value.trim();
+      const prize = document.getElementById('prize').value.trim();
+      const groupType = document.getElementById('groupType').value.trim();
+      const eventType = document.getElementById('eventType').value;
+      const category = document.getElementById('category').value;
+      const facultyCoordinator = document.getElementById('facultyCoordinator').value.split(',').map(item => item.trim()).filter(item => item);
+      const studentCoordinator = document.getElementById('studentCoordinator').value.split(',').map(item => item.trim()).filter(item => item);
+      const image = document.getElementById('image').value.trim();
+      const rules = document.getElementById('rules').value.split('\n').map(rule => rule.trim()).filter(rule => rule);
+      const facultyName = document.getElementById('facultyName').value.trim();
+      const facultyEmail = document.getElementById('facultyEmail').value.trim();
+      const facultyPhone = document.getElementById('facultyPhone').value.trim();
+      const studentName = document.getElementById('studentName').value.trim();
+      const studentEmail = document.getElementById('studentEmail').value.trim();
+      const studentPhone = document.getElementById('studentPhone').value.trim();
+
+      const eventJSON = {
+        [eventKey]: {
+          name,
+          shortDescription,
+          description,
+          date,
+          time,
+          venue,
+          registrationFee,
+          prize,
+          groupType,
+          eventType,
+          category,
+          facultyCoordinator,
+          studentCoordinator,
+          image,
+          rules,
+          contact: {
+            faculty: {
+              name: facultyName,
+              email: facultyEmail,
+              phone: facultyPhone
+            },
+            student: {
+              name: studentName,
+              email: studentEmail,
+              phone: studentPhone
+            }
+          }
+        }
+      };
+
+      document.getElementById('jsonOutput').value = JSON.stringify(eventJSON, null, 2);
+    }
+
+    function downloadJSON() {
+      const jsonOutput = document.getElementById('jsonOutput').value;
+      if (!jsonOutput) {
+        alert("Please generate JSON first.");
+        return;
+      }
+      const blob = new Blob([jsonOutput], {type: 'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'event.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
