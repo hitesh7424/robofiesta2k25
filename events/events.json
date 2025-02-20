@@ -30,7 +30,8 @@
         "email": "riya@example.com",
         "phone": "+91 99887 66554"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "workshop-plc": {
     "name": "Workshop-1 PLC",
@@ -63,7 +64,8 @@
         "email": "riya@example.com",
         "phone": "+91 99887 66554"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "workshop-ros": {
     "name": "Workshop-2 ROS",
@@ -96,7 +98,8 @@
         "email": "vikram@example.com",
         "phone": "+91 98765 43211"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "project-expo": {
     "name": "Project Expo",
@@ -129,7 +132,8 @@
         "email": "sneha@example.com",
         "phone": "+91 87654 32100"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "paper-presentation": {
     "name": "Paper Presentation",
@@ -162,7 +166,8 @@
         "email": "priya@example.com",
         "phone": "+91 98765 00002"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "sumo-bot": {
     "name": "Sumo Bot",
@@ -195,7 +200,8 @@
         "email": "rahul@example.com",
         "phone": "+91 98765 00003"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "robo-race": {
     "name": "Robo Race",
@@ -228,7 +234,8 @@
         "email": "anjali@example.com",
         "phone": "+91 98765 00004"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "line-following-robot": {
     "name": "Line Following Robot",
@@ -261,7 +268,8 @@
         "email": "sanjay@example.com",
         "phone": "+91 98765 00005"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "robo-soccer": {
     "name": "Robo Soccer",
@@ -294,7 +302,8 @@
         "email": "kiran@example.com",
         "phone": "+91 98765 00006"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "drone-shoot": {
     "name": "Drone Shoot",
@@ -327,7 +336,8 @@
         "email": "neha@example.com",
         "phone": "+91 98765 00007"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "drone-racing": {
     "name": "Drone Racing",
@@ -360,6 +370,7 @@
         "email": "suresh@example.com",
         "phone": "+91 98765 00008"
       }
-    }
+    },
+    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   }
 }

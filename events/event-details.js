@@ -62,6 +62,14 @@ function getQueryParam(param) {
         document.getElementById('event-student-contact').textContent =
           `${studentContact.name} | Email: ${studentContact.email} | Phone: ${studentContact.phone}`;
       }
+
+      // Attach event listener to registration buttons
+      document.querySelectorAll('.register-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          window.location.href = event.registrationLink;
+        });
+      });
+
     } catch (error) {
       console.error("Error loading event details:", error);
       window.location.href = "index.html";
