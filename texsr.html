@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>/* ---------- About Carousel Container ---------- */
+        .about-carousel {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          background: #0d0d0d;
+          color: #fff;
+          font-family: 'Helvetica Neue', sans-serif;
+        }
+        
+        /* ---------- Carousel Slides ---------- */
+        .carousel-slides {
+          display: flex;
+          transition: transform 0.8s ease-in-out;
+        }
+        
+        /* Each slide takes full width */
+        .carousel-slide {
+          min-width: 100%;
+          display: flex;
+          align-items: center;
+          padding: 60px 80px;
+          box-sizing: border-box;
+        }
+        
+        /* Alternate slide order for visual variety */
+        .carousel-slide:nth-child(odd) .slide-content {
+          order: 1;
+        }
+        .carousel-slide:nth-child(odd) .slide-image {
+          order: 2;
+        }
+        .carousel-slide:nth-child(even) .slide-content {
+          order: 2;
+        }
+        .carousel-slide:nth-child(even) .slide-image {
+          order: 1;
+        }
+        
+        /* ---------- Slide Content ---------- */
+        .slide-content {
+          flex: 1;
+          padding: 20px;
+        }
+        .slide-content h1 {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .slide-content h1 span {
+          font-size: 1.2rem;
+          font-weight: 300;
+          color: #00e6ff;
+        }
+        .slide-content p {
+          font-size: 1rem;
+          line-height: 1.6;
+          opacity: 0.9;
+          margin-bottom: 20px;
+        }
+        .slide-content .author {
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          opacity: 0.8;
+        }
+        
+        /* ---------- Slide Image ---------- */
+        .slide-image {
+          flex: 1;
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          margin: 0 20px;
+        }
+        
+        /* ---------- Carousel Controls ---------- */
+        .carousel-controls {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+          display: flex;
+          justify-content: space-between;
+          pointer-events: none;
+          padding: 0 20px;
+        }
+        .carousel-controls button {
+          background: rgba(0, 0, 0, 0.4);
+          border: none;
+          color: #00e6ff;
+          font-size: 2rem;
+          padding: 10px 15px;
+          cursor: pointer;
+          pointer-events: all;
+          transition: background 0.3s;
+          border-radius: 4px;
+        }
+        .carousel-controls button:hover {
+          background: rgba(0, 0, 0, 0.7);
+        }
+        
+        /* ---------- Responsive Adjustments ---------- */
+        @media (max-width: 768px) {
+          .carousel-slide {
+            flex-direction: column;
+            padding: 40px 20px;
+          }
+          .slide-image {
+            width: 100%;
+            height: 250px;
+            margin: 20px 0;
+          }
+          .slide-content h1 {
+            font-size: 2rem;
+          }
+          .slide-content p {
+            font-size: 0.9rem;
+          }
+        }
+        </style>
+    <div class="about-carousel">
+        <div class="carousel-slides">
+          <div class="carousel-slide" data-bg="#27323c">
+            <div class="slide-content">
+              <h1>ICELAND <span>EUROPE</span></h1>
+              <p>
+                “As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious. The number of visitors to Iceland has doubled in that period, and I feared this might mean a little less magic to go around. At the end of this trip, 6000km later, I'm thrilled to report that the magic levels remain high. It's found in glorious football victories and Viking chants, kayaking among icebergs, sitting with puffins under the midnight sun and crunching across brand-new lava fields.”
+              </p>
+              <p class="author">– Carolyn Bain</p>
+            </div>
+            <div class="slide-image" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg');"></div>
+          </div>
+          <div class="carousel-slide" data-bg="#19304a">
+            <div class="slide-content">
+              <h1>CHINA <span>ASIA</span></h1>
+              <p>
+                “Its modern face is dazzling, but China is no one-trick pony. The world's oldest continuous civilisation isn't all smoked glass and brushed aluminium and while you won't be tripping over artefacts – three decades of round-the-clock development and rash town-planning have taken their toll – rich seams of antiquity await.”
+              </p>
+              <p class="author">– Damian Harper</p>
+            </div>
+            <div class="slide-image" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg');"></div>
+          </div>
+          <div class="carousel-slide" data-bg="#2b2533">
+            <div class="slide-content">
+              <h1>USA <span>NORTH AMERICA</span></h1>
+              <p>
+                “When it comes to travel, America has always floored me with its staggering range of possibilities. Not many other countries have so much natural beauty – mountains, beaches, rainforest, deserts, canyons, glaciers – coupled with fascinating cities to explore, an unrivaled music scene and all the things that make travel so rewarding (friendly locals, great restaurants and farmers markets, and plenty of quirky surprises).”
+              </p>
+              <p class="author">– Regis St Louis</p>
+            </div>
+            <div class="slide-image" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg');"></div>
+          </div>
+          <div class="carousel-slide" data-bg="#312f2d">
+            <div class="slide-content">
+              <h1>PERU <span>SOUTH AMERICA</span></h1>
+              <p>
+                “For me, Peru is the molten core of South America, a distillation of the oldest traditions and the finest building, weaving and art made by the most sophisticated cultures on the continent. In Peru the wildest landscapes – from frozen Andean peaks to the deep Amazon – help us re-forge our connection to the natural world. It is also a cultural stew, where diverse peoples live side by side, negotiating modern life with humor and aplomb. Beyond that, the cuisine alone makes it worth the trip. Every return is rich and surprising.”
+              </p>
+              <p class="author">– Carolyn McCarthy</p>
+            </div>
+            <div class="slide-image" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg');"></div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-prev">&lt;</button>
+          <button class="carousel-next">&gt;</button>
+        </div>
+      </div>
+      <script>document.addEventListener('DOMContentLoaded', function () {
+        const slidesContainer = document.querySelector('.carousel-slides');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        const slideCount = slides.length;
+        let currentIndex = 0;
+        let autoSlideInterval;
+      
+        function goToSlide(index) {
+          if (index < 0) {
+            index = slideCount - 1;
+          } else if (index >= slideCount) {
+            index = 0;
+          }
+          slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+          currentIndex = index;
+        }
+      
+        function nextSlide() {
+          goToSlide(currentIndex + 1);
+        }
+      
+        function prevSlide() {
+          goToSlide(currentIndex - 1);
+        }
+      
+        nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          nextSlide();
+          resetInterval();
+        });
+      
+        prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          prevSlide();
+          resetInterval();
+        });
+      
+        function startAutoSlide() {
+          autoSlideInterval = setInterval(nextSlide, 6000);
+        }
+      
+        function resetInterval() {
+          clearInterval(autoSlideInterval);
+          startAutoSlide();
+        }
+      
+        startAutoSlide();
+      });
+      </script>
+</body>
+</html>

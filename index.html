@@ -13,105 +13,54 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="components/logo.css" />
     <link rel="stylesheet" href="components/navigationbar.css" />
+    <link rel="stylesheet" href="components/loader.css" />
+    <link rel="stylesheet" href="components/logo-art.css" />
+    <link rel="stylesheet" href="components/neon-countdown.css" />
     <link rel="stylesheet" href="components/particle-bg.css" />
   </head>
   <body>
     <!-- Particle.js container -->
     <div class="particles-js" id="particles-js"></div>
-    <!-- <audio autoplay loop id="background-audio">
-            <source src="Coders Assemble.mp3" type="audio/mp3">
-            Your browser does not support HTML5 audio.
-        </audio> -->
-    <!-- Custom Cursor -->
-    <!-- <div class="custom-cursor"></div> -->
 
-    <!-- Loader -->
-    <!-- DotLottie Loader (Full-Screen) -->
-
-    <!--
-    <div class="loader" id="loader">
-    <dotlottie-player
-      src="https://lottie.host/0a0b8ed0-efb0-4056-87a4-1f4645313879/095XeQrjXU.lottie"
-      background="transparent"
-        speed="1"
-        style="width: 25rem; height: 25rem"
-        loop
-        autoplay
-      ></dotlottie-player> </div></div>-->
-    
+    <!-- Professional Loader -->
     <!-- <div class="loader" id="loader">
-      <dotlottie-player
-        src="https://lottie.host/b4b4708b-8fd7-4bbd-8050-78606f5f69ce/rLO2PzvWqz.lottie"
-        background="transparent"
-        speed="1"
-        style="width: 25rem; height: 25rem"
-        loop
-        autoplay
-      ></dotlottie-player>
+      <div class="loader-ring"></div>
+      <div class="loader-text">LOADING</div>
     </div> -->
 
-    <!-- Include DotLottie Script -->
-    <script
-      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-      type="module"
-    ></script>
-
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="nav-container">
-    <!-- Logo Container -->
-    <div class="nav-logo-container">
-      <a href="#" class="event-logo">
-        <img src="../images/event-logo.png" alt="Robofiesta 2k25 Logo" />
-      </a>
-      <a href="#" class="college-logo">
-        <img src="../images/college-logo.png" alt="College Logo" />
-      </a>
-    </div>
-    <!-- Hamburger Menu Toggle -->
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <!-- Navigation Links -->
-    <div class="nav-links">
-      <a href="../" class="nav-link">Home</a>
-      <a href="../about" class="nav-link">About Us</a>
-      <a href="../events" class="nav-link">Events</a>
-      <a href="../contactus" class="nav-link">Contact Us</a>
-    </div>
-  </div>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo Container -->
+        <div class="nav-logo-container">
+          <a href="#" class="event-logo">
+            <img src="../images/event-logo.png" alt="Robofiesta 2k25 Logo" />
+          </a>
+          <a href="#" class="college-logo">
+            <img src="../images/college-logo.png" alt="College Logo" />
+          </a>
+        </div>
+        <!-- Hamburger Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="../" class="nav-link">Home</a>
+          <a href="../about" class="nav-link">About Us</a>
+          <a href="../events" class="nav-link">Events</a>
+          <a href="../contactus" class="nav-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-      <!-- Particle.js container -->
-      <!-- <div id="particles-js"></div> -->
       <div class="container">
         <div class="hero-content">
-          <!-- basic logo of event for hero -->
-          <div class="rf-main" id="hhome">
-            <svg class="svgs" viewBox="0 0 960 300">
-              <symbol id="s-text">
-                <text text-anchor="middle" x="50%" y="80%">
-                  ROBOFIESTA 2K25
-                </text>
-              </symbol>
-
-              <g class="g-ants">
-                <use xlink:href="#s-text" class="text-copy"></use>
-                <use xlink:href="#s-text" class="text-copy"></use>
-                <use xlink:href="#s-text" class="text-copy"></use>
-                <use xlink:href="#s-text" class="text-copy"></use>
-                <use xlink:href="#s-text" class="text-copy"></use>
-              </g>
-            </svg>
-          </div>
-          <!-- end of logo -->
-
           <p class="hero-description">Welcome to the Future of Robotics</p>
 
           <!-- Fancy Neon Countdown -->
@@ -139,16 +88,12 @@
       </div>
     </section>
 
-
-
-
-
     <!-- Include Particle.js from CDN -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Main Script -->
     <script src="script.js"></script>
     <script src="components/particle-bg.js"></script>
+    <script src="components/loader.js"></script>
     <script src="components/navigationbar.js"></script>
-
   </body>
 </html>

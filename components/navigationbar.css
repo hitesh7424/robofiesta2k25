@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Base Styles */
 html {
@@ -12,8 +12,8 @@ html {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  z-index: 100;
+  backdrop-filter: blur(100px);
+  z-index: 9999;
   padding: 5px 20px; /* Reduced height */
 }
 
@@ -23,6 +23,26 @@ html {
   justify-content: space-between;
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.event-logo img {
+  height: 60px;
+  transition: transform 0.4s ease;
+}
+.event-logo img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+.college-logo img {
+  height: 60px;
+  transition: opacity 0.4s ease;
+}
+.college-logo img:hover {
+  opacity: 0.8;
 }
 
 /* Logo Styles */
@@ -45,7 +65,7 @@ html {
   gap: 20px;
 }
 .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
@@ -66,7 +86,7 @@ html {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 101;
+  z-index: 99999;
 }
 .menu-toggle .bar {
   width: 25px;
@@ -77,13 +97,16 @@ html {
 
 /* Hamburger-to-Cross Animation */
 .menu-toggle.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+  border-radius: 50%;
 }
 .menu-toggle.active .bar:nth-child(2) {
   opacity: 0;
+  border-radius: 50%;
 }
 .menu-toggle.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
+  border-radius: 50%;
 }
 
 /* Mobile Navigation Overlay */
@@ -97,7 +120,11 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(circle, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -106,7 +133,7 @@ html {
     transform: scale(0);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
-    z-index: 100;
+    z-index: 9999;
   }
   .nav-links.active {
     transform: scale(1);
