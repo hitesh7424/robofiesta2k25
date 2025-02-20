@@ -1,25 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-.rf-main {
-  margin-top: 0%;
+.robo-main {
+  margin-top: 5%;
 }
 
 .svgs {
   display: block;
-  font: 6rem 'Montserrat';
+  font: 15em 'Montserrat';
   width: 90%;
   height: 300px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 svg {
-  display:block;
+  display: block;
   top: 16px;
-  font: 6rem 'Montserrat';
+  font: 10.5em 'Montserrat';
   width: 90%;
-  overflow-x: hidden;
   height: 300px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .text-copy {
@@ -28,7 +27,7 @@ svg {
   stroke-dasharray: 6% 29%;
   stroke-width: 5px;
   stroke-dashoffset: 0%;
-  animation: stroke-offset 6s infinite linear;
+  animation: stroke-offset 5s infinite linear;
   text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
@@ -61,11 +60,14 @@ svg {
   animation-delay: -5s;
   text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
+.text-copy:nth-child(6) {
+  stroke: #66e0ff;
+  animation-delay: -6s;
+  text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
+}
 
 @keyframes stroke-offset {
   100% {
     stroke-dashoffset: -35%;
   }
 }
-
-

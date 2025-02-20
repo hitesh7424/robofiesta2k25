@@ -50,12 +50,24 @@
 }
 
 @media (max-width: 768px) {
-
   #countdown {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
     gap: 10px;
   }
+
   .countdown-item {
-    margin: 0 auto;
+    flex-grow: 1; /* Allow items to resize proportionally */
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .countdown-number {
+    font-size: 6vw; /* Scale with screen width */
+  }
+
+  .countdown-label {
+    font-size: 2vw; /* Scale label size */
   }
 }

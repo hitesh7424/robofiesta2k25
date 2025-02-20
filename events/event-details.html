@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Details</title>
+  <link rel="stylesheet" href="event-details.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="event-detail-container">
+    <div class="event-header">
+      <h1 id="event-title" class="event-title"></h1>
+      <p id="event-description" class="event-description"></p>
+    </div>
+
+    <div class="event-info-grid">
+      <div class="event-info-box">
+        <p><strong>📅 Date:</strong> <span id="event-date"></span></p>
+        <p><strong>⏰ Time:</strong> <span id="event-time"></span></p>
+        <p><strong>📍 Venue:</strong> <span id="event-venue"></span></p>
+      </div>
+      <div class="event-info-box">
+        <p><strong>💰 Registration Fee:</strong> <span id="event-fee"></span></p>
+        <p><strong>🏆 Cash Prize:</strong> <span id="event-prize"></span></p>
+        <p><strong>👥 Group:</strong> <span id="event-group"></span></p>
+      </div>
+      <div class="event-info-box">
+        <p><strong>🖥️ Event Type:</strong> <span id="event-type"></span></p>
+        <p><strong>🎓 Faculty Coordinator:</strong></p>
+        <ul id="faculty-coordinator"></ul>
+        <p><strong>📞 Student Coordinator:</strong></p>
+        <ul id="student-coordinator"></ul>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="back-btn" onclick="goBack()">⬅ Back to Events</button>
+      <button class="register-btn">Register Now</button>
+    </div>
+  </div>
+
+  <script src="event-details.js"></script>
+</body>
+</html>

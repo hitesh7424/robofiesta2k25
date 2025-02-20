@@ -12,110 +12,82 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../about/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../components/navigationbar.css" />
+    <link rel="stylesheet" href="../components/loader.css" />
+    <link rel="stylesheet" href="../components/logo-art.css" />
+    <link rel="stylesheet" href="../components/neon-countdown.css" />
     <link rel="stylesheet" href="../components/particle-bg.css" />
-    <link rel="stylesheet" href="../components/footer.css" />
   </head>
   <body>
     <!-- Particle.js container -->
     <div class="particles-js" id="particles-js"></div>
 
+    <!-- Professional Loader -->
+    <!-- <div class="loader" id="loader">
+      <div class="loader-ring"></div>
+      <div class="loader-text">LOADING</div>
+    </div> -->
 
- 
-
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="nav-container">
-    <!-- Logo Container -->
-    <div class="nav-logo-container">
-      <a href="#" class="event-logo">
-        <img src="../images/event-logo.png" alt="Robofiesta 2k25 Logo" />
-      </a>
-      <a href="#" class="college-logo">
-        <img src="../images/college-logo.png" alt="College Logo" />
-      </a>
-    </div>
-    <!-- Hamburger Menu Toggle -->
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <!-- Navigation Links -->
-    <div class="nav-links">
-      <a href="../" class="nav-link">Home</a>
-      <a href="../about" class="nav-link">About Us</a>
-      <a href="../events" class="nav-link">Events</a>
-      <a href="../contactus" class="nav-link">Contact Us</a>
-    </div>
-  </div>
-</nav>
-
-  
-
-
-
-
-
-
-    <!-- Events Section -->
-    <section class="events" id="events">
-        <div class="container">
-          <span class="section-tag">What's Happening</span>
-          <h2 class="section-title">Featured Events</h2>
-  
-          <div
-            id="filter-buttons"
-            class="center-align"
-            style="margin-bottom: 20px"
-          >
-            <button class="btn filter-btn" data-category="all">All</button>
-            <button class="btn filter-btn" data-category="workshop">
-              Workshop
-            </button>
-            <button class="btn filter-btn" data-category="technical">
-              Technical
-            </button>
-            <button class="btn filter-btn" data-category="nontechnical">
-              Nontechnical
-            </button>
-          </div>
-          <!-- Events Grid -->
-          <div class="events-grid" id="events-grid">
-            <!-- Event cards will be dynamically inserted here -->
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo Container -->
+        <div class="nav-logo-container">
+          <a href="#" class="event-logo">
+            <img src="../images/event-logo.png" alt="Robofiesta 2k25 Logo" />
+          </a>
+          <a href="#" class="college-logo">
+            <img src="../images/college-logo.png" alt="College Logo" />
+          </a>
         </div>
-      </section>
-  
-      <!-- Event Detail Modal -->
-      <div id="eventModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="modal-header">
-            <h2 class="modal-title"></h2>
-          </div>
-          <div class="modal-body">
-            <img src="" alt="Event Image" class="event-image" />
-            <p class="event-date"></p>
-            <p class="event-time"></p>
-            <p class="event-type"></p>
-            <p class="event-category"></p>
-            <p class="event-price"></p>
-            <p class="event-prize-pool"></p>
-            <p class="event-description"></p>
-            <p class="faculty-coordinator"></p>
-            <p><strong>Student Coordinators:</strong></p>
-            <ul class="student-coordinators"></ul>
-            <button class="register-btn">Register Now</button>
-          </div>
-          <div class="modal-footer">
-            <h3>Contact us for more information</h3>
-          </div>
+        <!-- Hamburger Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="../" class="nav-link">Home</a>
+          <a href="../about" class="nav-link">About Us</a>
+          <a href="../events" class="nav-link">Events</a>
+          <a href="../contactus" class="nav-link">Contact Us</a>
         </div>
       </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+      <h1>Explore Our Events</h1>
+    </header>
   
-     
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+      <button class="filter-btn" onclick="filterEvents('all')">All</button>
+      <button class="filter-btn" onclick="filterEvents('technical')">Technical</button>
+      <button class="filter-btn" onclick="filterEvents('non-technical')">Non-Technical</button>
+      <button class="filter-btn" onclick="filterEvents('workshop')">Workshop</button>
+    </div>
+  
+    <!-- Events Container -->
+    <div id="events-container" class="events-container">
+      <!-- Event cards will be generated here -->
+    </div>
 
 
 
@@ -124,14 +96,26 @@
 
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Include Particle.js from CDN -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Main Script -->
-    <script src="../about/script.js"></script>
+    <script src="script.js"></script>
     <script src="../components/particle-bg.js"></script>
+    <script src="../components/loader.js"></script>
     <script src="../components/navigationbar.js"></script>
-
   </body>
 </html>

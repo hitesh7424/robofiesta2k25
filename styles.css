@@ -1,95 +1,110 @@
 /* ===================================
    Global Reset & Base Styles
    =================================== */
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    background: #0d0d0d;
-    color: #fff;
-    overflow-x: hidden;
-    position: relative;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+}
 
-  
-  /* ===================================
+body {
+  font-family: "Inter", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ===================================
      Hero Section
      =================================== */
-  .hero {
-    position: relative;
-    padding: 160px 20px 100px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  .hero .container {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.hero {
+  position: relative;
+  padding: 160px 20px 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-  
-  .hero-description {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(0,230,255,0.7);
-  }
-  
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  
-  /* ===================================
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-description {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  color: #00eaff; /* Neon blue */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #00eaff;
+  animation: flicker 1.5s infinite alternate;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+/* Neon Flicker Animation */
+@keyframes flicker {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #00eaff;
+  }
+  50% {
+    text-shadow: 0 0 20px #00eaff, 0 0 30px #00eaff, 0 0 40px #00eaff;
+  }
+}
+
+/* ===================================
      CTA Button
      =================================== */
-  .cta-button {
-    display: inline-block;
-    background: transparent;
-    color: #fff;
-    border: 2px solid #00e6ff;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: #00e6ff;
-    color: #000;
-    transform: scale(1.05);
-  }
-  
-  /* ===================================
+.cta-button {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #00e6ff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #00e6ff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ===================================
      Responsive Adjustments
      =================================== */
-  @media (max-width: 768px) {
-    .hero-description {
-      font-size: 1.3rem;
-    }
-    #countdown {
-      flex-direction: row;
-      /* gap: 10px; */
-    }
-    .countdown-item {
-      margin: 0 auto;
-    }
+@media (max-width: 768px) {
+  .hero-description {
+    font-size: 1.3rem;
   }
-  
+  #countdown {
+    flex-direction: row;
+    /* gap: 10px; */
+  }
+  .countdown-item {
+    margin: 0 auto;
+  }
+}

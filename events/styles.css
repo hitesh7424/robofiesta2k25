@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #000428, #004e92);
+  font-family: 'Space Grotesk', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+}
+
+/* Filter Buttons */
+.filter-container {
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background: #FF007F;
+  border: none;
+  color: #0a0a0a;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 10px #FF007F;
+}
+
+.filter-btn:hover {
+  background: #00eaff;
+  box-shadow: 0 0 15px #00eaff;
+}
+
+/* Events Container */
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Event Card */
+.event-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* Event Overlay */
+.event-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  color: #FF007F;
+  text-shadow: 0 0 10px #FF007F;
+}
+
+.event-short-description {
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #00eaff;
+  color: #0a0a0a;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #FF007F;
+}
