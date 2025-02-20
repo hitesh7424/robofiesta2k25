@@ -1,367 +1,365 @@
 {
-    "robo-soccer": {
-      "name": "Robo Soccer",
-      "shortDescription": "An intense soccer match between autonomous robots, testing AI, strategy, and control.",
-      "description": "Robo Soccer is a high-speed challenge where autonomous robots compete in a soccer match using advanced programming and sensors. Participants must build and program robots to maneuver, pass, and score goals while overcoming obstacles and opponents.",
-      "date": "March 22, 2025",
-      "time": "10:30 AM - 11:30 AM",
-      "venue": "MSB T3",
-      "registrationFee": "₹250",
-      "prize": "₹3000",
-      "groupType": "Team (Minimum 2 Members)",
-      "eventType": "Offline",
-      "category": "Technical",
-      "facultyCoordinator": ["Ms. M. Vennila"],
-      "studentCoordinator": ["Akash R", "Pratap A"],
-      "image": "images/robo-soccer.jpg",
-      "rules": [
-        "Each team must have a minimum of 2 and a maximum of 5 members.",
-        "Robots must comply with the size and weight regulations specified in the rulebook.",
-        "Teams will be given 5 minutes per match to compete.",
-        "Any form of external interference with the robot during the match will lead to disqualification."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Ms. M. Vennila",
-          "email": "vennila@example.com",
-          "phone": "+91 98765 43210"
-        },
-        "student": {
-          "name": "Akash R",
-          "email": "akash@example.com",
-          "phone": "+91 87654 32109"
-        }
+  "hack-fest": {
+    "name": "Hack Fest",
+    "shortDescription": "A 24-hour hackathon to innovate and create solutions.",
+    "description": "Hack Fest is a 24-hour hackathon where participants come together to innovate and create solutions to real-world problems. Teams will work on their projects, present their ideas, and compete for exciting prizes. This event is perfect for tech enthusiasts and problem solvers.",
+    "date": "21st to 22nd March",
+    "time": "11:00 AM to 11:00 AM (24 hours)",
+    "venue": "CAD lab",
+    "registrationFee": "₹1000 per person",
+    "prize": "₹10000",
+    "groupType": "Team (Max 4 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Ms CH Priyanka"],
+    "studentCoordinator": ["JOHN PETER D", "GURU AKASH C", "MOHAN E", "SHARVIN V"],
+    "image": "images/hack-fest.webp",
+    "rules": [
+      "Participants must bring their laptops for hands-on exercises.",
+      "Basic knowledge of programming is recommended.",
+      "Certificates will be provided upon completion."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Ms CH Priyanka",
+        "email": "akumar@example.com",
+        "phone": "+91 91234 56789"
+      },
+      "student": {
+        "name": "Madhan E",
+        "email": "riya@example.com",
+        "phone": "+91 99887 66554"
       }
-    },
-    "ai-hackathon": {
-      "name": "AI Hackathon",
-      "shortDescription": "Innovate with AI in a 24-hour hackathon.",
-      "description": "The AI Hackathon challenges participants to develop innovative AI solutions in a fast-paced, collaborative environment. Teams will leverage machine learning and data analytics to create practical applications.",
-      "date": "March 25, 2025",
-      "time": "9:00 AM - 9:00 PM",
-      "venue": "Tech Lab 1",
-      "registrationFee": "₹300",
-      "prize": "₹5000",
-      "groupType": "Team (Max 4 Members)",
-      "eventType": "Offline",
-      "category": "Technical",
-      "facultyCoordinator": ["Dr. A. Kumar"],
-      "studentCoordinator": ["Riya Singh", "Amit Verma"],
-      "image": "images/ai-hackathon.jpg",
-      "rules": [
-        "Teams must register with at least one team member being a student.",
-        "All code must be written during the hackathon event.",
-        "Use of pre-existing code from previous competitions is prohibited."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Dr. A. Kumar",
-          "email": "akumar@example.com",
-          "phone": "+91 91234 56789"
-        },
-        "student": {
-          "name": "Riya Singh",
-          "email": "riya@example.com",
-          "phone": "+91 99887 66554"
-        }
+    }
+  },
+  "workshop-plc": {
+    "name": "Workshop-1 PLC",
+    "shortDescription": "Learn the basics of Programmable Logic Controllers.",
+    "description": "The Workshop-1 PLC provides an introduction to Programmable Logic Controllers (PLCs). Participants will learn about PLC programming, hardware configuration, and practical applications in industrial automation.",
+    "date": "21st March",
+    "time": "9AM - 12PM",
+    "venue": "IOT Lab",
+    "registrationFee": "₹200 per person",
+    "prize": "NA",
+    "groupType": "Individual",
+    "eventType": "Offline",
+    "category": "Workshop",
+    "facultyCoordinator": ["Ms CH Priyanka"],
+    "studentCoordinator": ["Madhan E", "Pranav Anandkumar"],
+    "image": "images/workshop-plc.webp",
+    "rules": [
+      "Participants must bring their laptops for hands-on exercises.",
+      "Basic knowledge of programming is recommended.",
+      "Certificates will be provided upon completion."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Ms CH Priyanka",
+        "email": "akumar@example.com",
+        "phone": "+91 91234 56789"
+      },
+      "student": {
+        "name": "Madhan E",
+        "email": "riya@example.com",
+        "phone": "+91 99887 66554"
       }
-    },
-    "coding-marathon": {
-      "name": "Coding Marathon",
-      "shortDescription": "Solve algorithmic challenges in a timed event.",
-      "description": "The Coding Marathon puts your problem-solving skills to the test in a series of algorithmic challenges. Participants will work through puzzles and coding problems in a competitive environment.",
-      "date": "March 28, 2025",
-      "time": "10:00 AM - 6:00 PM",
-      "venue": "Main Auditorium",
-      "registrationFee": "₹200",
-      "prize": "₹4000",
-      "groupType": "Individual",
-      "eventType": "Online",
-      "category": "Technical",
-      "facultyCoordinator": ["Prof. S. Nair"],
-      "studentCoordinator": ["Vikram Rao"],
-      "image": "images/coding-marathon.jpg",
-      "rules": [
-        "Participants must solve problems within the given time frame.",
-        "Internet access is allowed only for research purposes.",
-        "Plagiarism or copying code from others will lead to disqualification."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Prof. S. Nair",
-          "email": "snair@example.com",
-          "phone": "+91 92345 67890"
-        },
-        "student": {
-          "name": "Vikram Rao",
-          "email": "vikram@example.com",
-          "phone": "+91 98765 43211"
-        }
+    }
+  },
+  "workshop-ros": {
+    "name": "Workshop-2 ROS",
+    "shortDescription": "Master the Robot Operating System (ROS) with hands-on experience.",
+    "description": "Join the Workshop-2 ROS to dive into the world of robotics. This workshop offers hands-on experience with the Robot Operating System (ROS), covering essential concepts, programming, and real-world applications. Perfect for aspiring roboticists and engineers.",
+    "date": "22nd March",
+    "time": "9AM to 12PM",
+    "venue": "IOT Lab",
+    "registrationFee": "₹250 per person",
+    "prize": "NA",
+    "groupType": "Individual",
+    "eventType": "Offline",
+    "category": "Workshop",
+    "facultyCoordinator": ["Mr S Tharmlingam"],
+    "studentCoordinator": ["Karthick P", "Mokesh S"],
+    "image": "images/workshop-ros.webp",
+    "rules": [
+      "Participants must solve problems within the given time frame.",
+      "Internet access is allowed only for research purposes.",
+      "Plagiarism or copying code from others will lead to disqualification."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Mr S Tharmlingam",
+        "email": "snair@example.com",
+        "phone": "+91 92345 67890"
+      },
+      "student": {
+        "name": "Karthick P",
+        "email": "vikram@example.com",
+        "phone": "+91 98765 43211"
       }
-    },
-    "business-plan-contest": {
-      "name": "Business Plan Contest",
-      "shortDescription": "Pitch your startup ideas to win big.",
-      "description": "The Business Plan Contest is a platform for aspiring entrepreneurs to present their innovative business ideas. Participants will pitch their plans to a panel of judges and receive feedback along with potential funding opportunities.",
-      "date": "March 30, 2025",
-      "time": "11:00 AM - 3:00 PM",
-      "venue": "Conference Hall B",
-      "registrationFee": "₹150",
-      "prize": "₹3500",
-      "groupType": "Team (Max 5 Members)",
-      "eventType": "Offline",
-      "category": "Non-Technical",
-      "facultyCoordinator": ["Dr. R. Mehta"],
-      "studentCoordinator": ["Sneha Patel"],
-      "image": "images/business-plan-contest.jpg",
-      "rules": [
-        "Each team must submit a business plan document before the event.",
-        "Presentations should not exceed 15 minutes.",
-        "Judging criteria include feasibility, innovation, and presentation skills."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Dr. R. Mehta",
-          "email": "rmehta@example.com",
-          "phone": "+91 98765 00001"
-        },
-        "student": {
-          "name": "Sneha Patel",
-          "email": "sneha@example.com",
-          "phone": "+91 87654 32100"
-        }
+    }
+  },
+  "project-expo": {
+    "name": "Project Expo",
+    "shortDescription": "Showcase your innovative projects to industry experts.",
+    "description": "The Project Expo is a platform for aspiring innovators to present their groundbreaking projects. Participants will have the opportunity to showcase their work to industry experts, receive valuable feedback, and compete for exciting prizes.",
+    "date": "22nd March",
+    "time": "10:00 AM - 11:30 AM",
+    "venue": "CAD lab",
+    "registrationFee": "₹150 per person",
+    "prize": "₹2000",
+    "groupType": "Team (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Mr S Tharmlingam"],
+    "studentCoordinator": ["Vignesh K", "Ranjan S"],
+    "image": "images/project-expo.webp",
+    "rules": [
+      "Each team must submit a business plan document before the event.",
+      "Presentations should not exceed 15 minutes.",
+      "Judging criteria include feasibility, innovation, and presentation skills."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Mr S Tharmlingam",
+        "email": "rmehta@example.com",
+        "phone": "+91 98765 00001"
+      },
+      "student": {
+        "name": "Vignesh K",
+        "email": "sneha@example.com",
+        "phone": "+91 87654 32100"
       }
-    },
-    "cyber-security-workshop": {
-      "name": "Cyber Security Workshop",
-      "shortDescription": "Learn ethical hacking and secure systems.",
-      "description": "The Cyber Security Workshop is an immersive session on ethical hacking, network security, and safeguarding digital assets. Participants will learn hands-on techniques to secure systems and understand vulnerabilities.",
-      "date": "April 1, 2025",
-      "time": "10:00 AM - 4:00 PM",
-      "venue": "Cyber Lab",
-      "registrationFee": "₹250",
-      "prize": "₹0",
-      "groupType": "Individual",
-      "eventType": "Offline",
-      "category": "Workshop",
-      "facultyCoordinator": ["Mr. R. Sharma"],
-      "studentCoordinator": ["Priya Desai"],
-      "image": "images/cyber-security-workshop.jpg",
-      "rules": [
-        "Participants must bring their own laptops.",
-        "Pre-requisites include basic knowledge of networking and programming.",
-        "Certification will be provided upon completion."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Mr. R. Sharma",
-          "email": "rsharma@example.com",
-          "phone": "+91 91234 00002"
-        },
-        "student": {
-          "name": "Priya Desai",
-          "email": "priya@example.com",
-          "phone": "+91 98765 00002"
-        }
+    }
+  },
+  "paper-presentation": {
+    "name": "Paper Presentation",
+    "shortDescription": "Present your research and innovative ideas.",
+    "description": "The Paper Presentation event provides a platform for researchers and students to present their innovative ideas and research findings. Participants will have the opportunity to showcase their work, receive feedback from experts, and compete for recognition and prizes.",
+    "date": "22nd March",
+    "time": "9:30 AM - 12:30 PM",
+    "venue": "EDUSAT Hall",
+    "registrationFee": "₹150 per person",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Ms CH Priyanka"],
+    "studentCoordinator": ["Shankar Narayan S", "Henson Samrat GC"],
+    "image": "images/paper-presentation.webp",
+    "rules": [
+      "Participants must bring their own laptops.",
+      "Pre-requisites include basic knowledge of networking and programming.",
+      "Certification will be provided upon completion."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Ms CH Priyanka",
+        "email": "rsharma@example.com",
+        "phone": "+91 91234 00002"
+      },
+      "student": {
+        "name": "Shankar Narayan S",
+        "email": "priya@example.com",
+        "phone": "+91 98765 00002"
       }
-    },
-    "robotics-challenge": {
-      "name": "Robotics Challenge",
-      "shortDescription": "Build, program, and battle in a robotics arena.",
-      "description": "The Robotics Challenge invites participants to build and program robots that can compete in a series of physical and technical challenges. The competition tests engineering skills, coding prowess, and innovative design.",
-      "date": "April 5, 2025",
-      "time": "9:30 AM - 5:30 PM",
-      "venue": "Engineering Block",
-      "registrationFee": "₹300",
-      "prize": "₹6000",
-      "groupType": "Team (Max 4 Members)",
-      "eventType": "Offline",
-      "category": "Technical",
-      "facultyCoordinator": ["Dr. K. Iyer"],
-      "studentCoordinator": ["Rahul Singh", "Pooja Verma"],
-      "image": "images/robotics-challenge.jpg",
-      "rules": [
-        "All teams must submit their design proposal before the event.",
-        "The robot must be built within the specified size and weight constraints.",
-        "Teams will have one practice session before the competition begins."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Dr. K. Iyer",
-          "email": "kiyer@example.com",
-          "phone": "+91 92345 00003"
-        },
-        "student": {
-          "name": "Rahul Singh",
-          "email": "rahul@example.com",
-          "phone": "+91 98765 00003"
-        }
+    }
+  },
+  "sumo-bot": {
+    "name": "Sumo Bot",
+    "shortDescription": "Battle your robots in the ultimate Sumo showdown.",
+    "description": "The Sumo Bot competition challenges participants to design and build robots that can compete in a Sumo-style arena. Teams will battle their robots against each other, aiming to push their opponents out of the ring. This event tests creativity, engineering skills, and strategic thinking.",
+    "date": "22nd March",
+    "time": "9:30 AM - 10:30 AM",
+    "venue": "MSB T8",
+    "registrationFee": "₹250 per person",
+    "prize": "₹3000",
+    "groupType": "Team (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Ms M Vennila"],
+    "studentCoordinator": ["Prashanth S", "Mohan E"],
+    "image": "images/sumo-bot.webp",
+    "rules": [
+      "All teams must submit their design proposal before the event.",
+      "The robot must be built within the specified size and weight constraints.",
+      "Teams will have one practice session before the competition begins."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Ms M Vennila",
+        "email": "kiyer@example.com",
+        "phone": "+91 92345 00003"
+      },
+      "student": {
+        "name": "Prashanth S",
+        "email": "rahul@example.com",
+        "phone": "+91 98765 00003"
       }
-    },
-    "gaming-tournament": {
-      "name": "Gaming Tournament",
-      "shortDescription": "Compete in the latest esports challenges.",
-      "description": "The Gaming Tournament is an exciting competition where gamers battle it out in popular video games. Participants can test their skills in a competitive, high-energy environment with cash prizes and sponsorships.",
-      "date": "April 8, 2025",
-      "time": "12:00 PM - 8:00 PM",
-      "venue": "Gaming Arena",
-      "registrationFee": "₹100",
-      "prize": "₹2500",
-      "groupType": "Individual",
-      "eventType": "Offline",
-      "category": "Non-Technical",
-      "facultyCoordinator": ["Mr. D. Kapoor"],
-      "studentCoordinator": ["Anjali Mehta"],
-      "image": "images/gaming-tournament.jpg",
-      "rules": [
-        "Participants must register individually.",
-        "Match formats and game titles will be announced on the day of the event.",
-        "Fair play and sportsmanship are mandatory."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Mr. D. Kapoor",
-          "email": "dkapoor@example.com",
-          "phone": "+91 91234 00004"
-        },
-        "student": {
-          "name": "Anjali Mehta",
-          "email": "anjali@example.com",
-          "phone": "+91 98765 00004"
-        }
+    }
+  },
+  "robo-race": {
+    "name": "Robo Race",
+    "shortDescription": "Race your robots to victory in an exciting competition.",
+    "description": "The Robo Race event challenges participants to design and build fast, agile robots capable of navigating a complex racecourse. Teams will compete to see whose robot can complete the course in the shortest time, testing their engineering skills and creativity.",
+    "date": "22nd March",
+    "time": "10:30 AM - 11:30 AM",
+    "venue": "MSB T7",
+    "registrationFee": "₹250 per person",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Ms S Priyadharshini"],
+    "studentCoordinator": ["Muthuselvam D", "Sharvin V"],
+    "image": "images/robo-race.webp",
+    "rules": [
+      "Participants must register individually.",
+      "Match formats and game titles will be announced on the day of the event.",
+      "Fair play and sportsmanship are mandatory."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Ms S Priyadharshini",
+        "email": "dkapoor@example.com",
+        "phone": "+91 91234 00004"
+      },
+      "student": {
+        "name": "Muthuselvam D",
+        "email": "anjali@example.com",
+        "phone": "+91 98765 00004"
       }
-    },
-    "uiux-workshop": {
-      "name": "UI/UX Workshop",
-      "shortDescription": "Design beautiful user interfaces and experiences.",
-      "description": "The UI/UX Workshop provides an in-depth look into the principles of user interface and user experience design. Participants will learn about design trends, user research, wireframing, and prototyping.",
-      "date": "April 10, 2025",
-      "time": "11:00 AM - 4:00 PM",
-      "venue": "Design Studio",
-      "registrationFee": "₹150",
-      "prize": "₹0",
-      "groupType": "Individual",
-      "eventType": "Offline",
-      "category": "Workshop",
-      "facultyCoordinator": ["Ms. L. Patel"],
-      "studentCoordinator": ["Sanjay Kumar"],
-      "image": "images/uiux-workshop.jpg",
-      "rules": [
-        "Participants should bring a sketchpad or digital device for design.",
-        "Basic knowledge of design software is recommended.",
-        "Certificates will be provided upon completion."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Ms. L. Patel",
-          "email": "lpatel@example.com",
-          "phone": "+91 91234 00005"
-        },
-        "student": {
-          "name": "Sanjay Kumar",
-          "email": "sanjay@example.com",
-          "phone": "+91 98765 00005"
-        }
+    }
+  },
+  "line-following-robot": {
+    "name": "Line Following Robot",
+    "shortDescription": "Build and program robots to follow a line autonomously.",
+    "description": "The Line Following Robot event challenges participants to design and program robots that can autonomously follow a line on a track. Teams will compete to see whose robot can navigate the course with the highest speed and accuracy, testing their skills in robotics and programming.",
+    "date": "22nd March",
+    "time": "9:30 AM - 10:30 AM",
+    "venue": "MSB T8",
+    "registrationFee": "₹250 per person",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Mr S Tharmlingam"],
+    "studentCoordinator": ["Gokulraj K", "Guru Akash C"],
+    "image": "images/line-following-robot.webp",
+    "rules": [
+      "Participants should bring a sketchpad or digital device for design.",
+      "Basic knowledge of design software is recommended.",
+      "Certificates will be provided upon completion."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Mr S Tharmlingam",
+        "email": "lpatel@example.com",
+        "phone": "+91 91234 00005"
+      },
+      "student": {
+        "name": "Gokulraj K",
+        "email": "sanjay@example.com",
+        "phone": "+91 98765 00005"
       }
-    },
-    "music-battle": {
-      "name": "Music Battle",
-      "shortDescription": "Showcase your musical talent and compete.",
-      "description": "The Music Battle is a competitive event for musicians and vocalists to perform live and compete for cash prizes and recognition. Participants can showcase their skills in a variety of genres.",
-      "date": "April 12, 2025",
-      "time": "2:00 PM - 6:00 PM",
-      "venue": "Concert Hall",
-      "registrationFee": "₹100",
-      "prize": "₹2000",
-      "groupType": "Individual",
-      "eventType": "Offline",
-      "category": "Non-Technical",
-      "facultyCoordinator": ["Mr. P. Sharma"],
-      "studentCoordinator": ["Kiran Desai"],
-      "image": "images/music-battle.jpg",
-      "rules": [
-        "Performances should not exceed 5 minutes.",
-        "Participants must provide their own instruments.",
-        "Judging will be based on creativity, skill, and stage presence."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Mr. P. Sharma",
-          "email": "psharma@example.com",
-          "phone": "+91 91234 00006"
-        },
-        "student": {
-          "name": "Kiran Desai",
-          "email": "kiran@example.com",
-          "phone": "+91 98765 00006"
-        }
+    }
+  },
+  "robo-soccer": {
+    "name": "Robo Soccer",
+    "shortDescription": "Compete in a thrilling soccer match with your robots.",
+    "description": "The Robo Soccer event invites participants to design and build robots capable of playing soccer. Teams will compete in exciting matches, showcasing their robots' agility, strategy, and teamwork. This event combines engineering, programming, and sportsmanship in a fun and competitive environment.",
+    "date": "22nd March",
+    "time": "10:30 AM - 11:30 AM",
+    "venue": "MSB T3",
+    "registrationFee": "₹250 per person",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Ms M Vennila"],
+    "studentCoordinator": ["Akash R", "Prathap A"],
+    "image": "images/robo-soccer.webp",
+    "rules": [
+      "Performances should not exceed 5 minutes.",
+      "Participants must provide their own instruments.",
+      "Judging will be based on creativity, skill, and stage presence."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Ms M Vennila",
+        "email": "psharma@example.com",
+        "phone": "+91 91234 00006"
+      },
+      "student": {
+        "name": "Akash R",
+        "email": "kiran@example.com",
+        "phone": "+91 98765 00006"
       }
-    },
-    "3d-printing-workshop": {
-      "name": "3D Printing Workshop",
-      "shortDescription": "Learn the basics of 3D printing technology.",
-      "description": "The 3D Printing Workshop introduces participants to the world of 3D printing. It covers the fundamentals of 3D modeling, printing techniques, and post-processing, allowing attendees to create real objects from digital designs.",
-      "date": "April 15, 2025",
-      "time": "10:00 AM - 3:00 PM",
-      "venue": "Innovation Lab",
-      "registrationFee": "₹200",
-      "prize": "₹0",
-      "groupType": "Individual",
-      "eventType": "Offline",
-      "category": "Workshop",
-      "facultyCoordinator": ["Mr. J. Singh"],
-      "studentCoordinator": ["Neha Gupta"],
-      "image": "images/3d-printing-workshop.jpg",
-      "rules": [
-        "Participants must complete a pre-workshop assignment.",
-        "Basic knowledge of 3D modeling is beneficial.",
-        "All designs must be original."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Mr. J. Singh",
-          "email": "jsingh@example.com",
-          "phone": "+91 91234 00007"
-        },
-        "student": {
-          "name": "Neha Gupta",
-          "email": "neha@example.com",
-          "phone": "+91 98765 00007"
-        }
+    }
+  },
+  "drone-shoot": {
+    "name": "Drone Shoot",
+    "shortDescription": "Show off your drone piloting skills in a thrilling shootout.",
+    "description": "The Drone Shoot event challenges participants to demonstrate their drone piloting skills in a series of exciting and competitive tasks. Teams will navigate their drones through obstacles and aim for targets, showcasing precision, agility, and control. This event is perfect for drone enthusiasts and tech-savvy competitors.",
+    "date": "April 15, 2025",
+    "time": "10:00 AM - 3:00 PM",
+    "venue": "Innovation Lab",
+    "registrationFee": "₹200 per person",
+    "prize": "₹0",
+    "groupType": "Individual",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Mr. J. Singh"],
+    "studentCoordinator": ["Neha Gupta"],
+    "image": "images/drone-shoot.webp",
+    "rules": [
+      "Participants must complete a pre-workshop assignment.",
+      "Basic knowledge of 3D modeling is beneficial.",
+      "All designs must be original."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Mr. J. Singh",
+        "email": "jsingh@example.com",
+        "phone": "+91 91234 00007"
+      },
+      "student": {
+        "name": "Neha Gupta",
+        "email": "neha@example.com",
+        "phone": "+91 98765 00007"
       }
-    },
-    "drone-racing": {
-      "name": "Drone Racing",
-      "shortDescription": "Race high-speed drones through challenging circuits.",
-      "description": "Drone Racing is a thrilling event where pilots race their drones through a complex circuit filled with obstacles and tight turns. Competitors must showcase precision control and quick reflexes to win.",
-      "date": "April 18, 2025",
-      "time": "11:00 AM - 1:00 PM",
-      "venue": "Outdoor Field",
-      "registrationFee": "₹150",
-      "prize": "₹3500",
-      "groupType": "Individual",
-      "eventType": "Offline",
-      "category": "Technical",
-      "facultyCoordinator": ["Dr. M. Rao"],
-      "studentCoordinator": ["Suresh Kumar"],
-      "image": "images/drone-racing.jpg",
-      "rules": [
-        "Participants must adhere to safety guidelines.",
-        "Drones must meet the specified technical requirements.",
-        "Any damage to the track will result in disqualification."
-      ],
-      "contact": {
-        "faculty": {
-          "name": "Dr. M. Rao",
-          "email": "mrao@example.com",
-          "phone": "+91 91234 00008"
-        },
-        "student": {
-          "name": "Suresh Kumar",
-          "email": "suresh@example.com",
-          "phone": "+91 98765 00008"
-        }
+    }
+  },
+  "drone-racing": {
+    "name": "Drone Racing",
+    "shortDescription": "Race high-speed drones through challenging circuits.",
+    "description": "Drone Racing is a thrilling event where pilots race their drones through a complex circuit filled with obstacles and tight turns. Competitors must showcase precision control and quick reflexes to win.",
+    "date": "April 18, 2025",
+    "time": "11:00 AM - 1:00 PM",
+    "venue": "Outdoor Field",
+    "registrationFee": "₹150 per person",
+    "prize": "₹3500",
+    "groupType": "Individual",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": ["Dr. M. Rao"],
+    "studentCoordinator": ["Suresh Kumar"],
+    "image": "images/drone-racing.webp",
+    "rules": [
+      "Participants must adhere to safety guidelines.",
+      "Drones must meet the specified technical requirements.",
+      "Any damage to the track will result in disqualification."
+    ],
+    "contact": {
+      "faculty": {
+        "name": "Dr. M. Rao",
+        "email": "mrao@example.com",
+        "phone": "+91 91234 00008"
+      },
+      "student": {
+        "name": "Suresh Kumar",
+        "email": "suresh@example.com",
+        "phone": "+91 98765 00008"
       }
     }
   }
-  
+}
