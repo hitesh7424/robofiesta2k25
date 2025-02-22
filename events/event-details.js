@@ -17,10 +17,10 @@ function getQueryParam(param) {
       const response = await fetch('events.json');
       const eventsData = await response.json();
       const event = eventsData[eventKey.toLowerCase()];
-      if (!event) {
-        window.location.href = "index.html";
-        return;
-      }
+      // if (!event) {
+      //   window.location.href = "index.html";
+      //   return;
+      // }
   
       // Populate basic event details
       document.getElementById('event-title').textContent = event.name;
@@ -53,15 +53,7 @@ function getQueryParam(param) {
         rulesList.innerHTML = "<li>No rules provided.</li>";
       }
   
-      // Populate contact details
-      if(event.contact) {
-        const facultyContact = event.contact.faculty;
-        const studentContact = event.contact.student;
-        document.getElementById('event-faculty-contact').textContent =
-          `${facultyContact.name} | Phone: <a href="tel:${facultyContact.phone}" >${facultyContact.phone}</a>`;
-        document.getElementById('event-student-contact').textContent =
-          `${studentContact.name} | Phone:  <a href="tel:${studentContact.phone}" >${studentContact.phone}</a>`;
-      }
+  
 
       // Attach event listener to registration buttons
       document.querySelectorAll('.register-btn').forEach(btn => {
