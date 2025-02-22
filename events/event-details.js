@@ -58,9 +58,9 @@ function getQueryParam(param) {
         const facultyContact = event.contact.faculty;
         const studentContact = event.contact.student;
         document.getElementById('event-faculty-contact').textContent =
-          `${facultyContact.name} | Email: ${facultyContact.email} | Phone: ${facultyContact.phone}`;
+          `${facultyContact.name} | Phone: <a href="tel:${facultyContact.phone}" >${facultyContact.phone}</a>`;
         document.getElementById('event-student-contact').textContent =
-          `${studentContact.name} | Email: ${studentContact.email} | Phone: ${studentContact.phone}`;
+          `${studentContact.name} | Phone:  <a href="tel:${studentContact.phone}" >${studentContact.phone}</a>`;
       }
 
       // Attach event listener to registration buttons

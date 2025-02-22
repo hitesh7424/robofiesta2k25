@@ -59,7 +59,7 @@ header h1 {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: transform 0.3s ease;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
@@ -72,8 +72,9 @@ header h1 {
 .event-overlay {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
   background: rgba(0, 0, 0, 0.7);
   text-align: left;
 }
@@ -96,6 +97,7 @@ header h1 {
   background: #00eaff;
   color: #0a0a0a;
   font-weight: bold;
+  align-self: end;
   border-radius: 5px;
   text-decoration: none;
   transition: background 0.3s ease;

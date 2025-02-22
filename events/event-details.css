@@ -64,6 +64,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin: 30px 0;
+  text-align: start;
 }
 
 .event-info-box {
@@ -191,3 +192,5 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
