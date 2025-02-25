@@ -26,7 +26,7 @@
       "Basic knowledge of programming is recommended.",
       "Certificates will be provided upon completion."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSdS0MVp6Cmfj1KxJyDwHAeoJp7DwoCkOQSpMqS1oO3_Ov7gJA/viewform?usp=sharing"
   },
   "workshop-plc": {
     "name": "Workshop-1 PLC",
@@ -53,7 +53,7 @@
       "Basic knowledge of programming is recommended.",
       "Certificates will be provided upon completion."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfW8irnG9cU-o9iXw6W8uID3rUfEDF0GGl-NdNjdVlfwi8SyQ/viewform?usp=sharing"
   },
   "workshop-ros": {
     "name": "Workshop-2 ROS",
@@ -80,7 +80,7 @@
       "Internet access is allowed only for research purposes.",
       "Plagiarism or copying code from others will lead to disqualification."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScwx3xA9pay3JxF4mYm_dX_HE7hZYMUlpCHGGpgxoOYx6YbNg/viewform?usp=sharing"
   },
   "project-expo": {
     "name": "Project Expo",
@@ -107,7 +107,7 @@
       "Presentations should not exceed 15 minutes.",
       "Judging criteria include feasibility, innovation, and presentation skills."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfsS7XHlpKXAHkABPlLxfZOKkfQ0KwChJwG5ZsEnDaOKowuLA/viewform?usp=sharing"
   },
   "paper-presentation": {
     "name": "Paper Presentation",
@@ -134,7 +134,7 @@
       "Pre-requisites include basic knowledge of networking and programming.",
       "Certification will be provided upon completion."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSf4mqocGKaU-HqcdZ6M3oKFb4zgGEIdvvtt9jAC9liEahnK8A/viewform?usp=sharing"
   },
   "sumo-bot": {
     "name": "Sumo Bot",
@@ -161,7 +161,7 @@
       "The robot must be built within the specified size and weight constraints.",
       "Teams will have one practice session before the competition begins."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   },
   "robo-race": {
     "name": "Robo Race",
@@ -188,7 +188,7 @@
       "Match formats and game titles will be announced on the day of the event.",
       "Fair play and sportsmanship are mandatory."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   },
   "line-following-robot": {
     "name": "Line Following Robot",
@@ -215,7 +215,7 @@
       "Basic knowledge of design software is recommended.",
       "Certificates will be provided upon completion."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   },
   "robo-soccer": {
     "name": "Robo Soccer",
@@ -242,7 +242,7 @@
       "Participants must provide their own instruments.",
       "Judging will be based on creativity, skill, and stage presence."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   },
   "drone-shoot": {
     "name": "Drone Shoot",
@@ -268,12 +268,12 @@
       "Basic knowledge of 3D modeling is beneficial.",
       "All designs must be original."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   },
-  "drone-racing": {
-    "name": "Drone Racing",
-    "shortDescription": "Race high-speed drones through challenging circuits.",
-    "description": "Drone Racing is a thrilling event where pilots race their drones through a complex circuit filled with obstacles and tight turns. Competitors must showcase precision control and quick reflexes to win.",
+  "maze-solver": {
+    "name": "Maze Solver",
+    "shortDescription": "Program your robot to navigate and solve a complex maze.",
+    "description": "The Maze Solver event challenges participants to design and program robots that can autonomously navigate through a complex maze. Teams will compete to see whose robot can find the exit in the shortest time, testing their skills in robotics, programming, and problem-solving.",
     "date": "April 18, 2025",
     "time": "11:00 AM - 1:00 PM",
     "venue": "Outdoor Field",
@@ -288,12 +288,12 @@
     "studentCoordinator": [
       ["Suresh Kumar", "+91 98765 00008"]
     ],
-    "image": "images/drone-racing.webp",
+    "image": "images/robo-maze.webp",
     "rules": [
       "Participants must adhere to safety guidelines.",
       "Drones must meet the specified technical requirements.",
       "Any damage to the track will result in disqualification."
     ],
-    "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   }
 }
