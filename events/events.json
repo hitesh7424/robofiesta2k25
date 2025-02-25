@@ -15,10 +15,10 @@
       ["Ms CH Priyanka", "+91 91234 56789"]
     ],
     "studentCoordinator": [
-      ["JOHN PETER D", "+91 99887 66554"],
-      ["GURU AKASH C", "+91 99887 66554"],
+      ["JOHN PETER D", "+91 73051 91951"],
+      ["GURU AKASH C", "+91 84385 23972"],
       ["MOHAN E", "+91 99887 66554"],
-      ["SHARVIN V", "+91 99887 66554"]
+      ["SHARVIN V", "+91 91760 23120"]
     ],
     "image": "images/hack-fest.webp",
     "rules": [
@@ -126,7 +126,7 @@
     ],
     "studentCoordinator": [
       ["Shankar Narayan S", "+91 98765 00002"],
-      ["Henson Samrat GC", "+91 98765 00002"]
+      ["Henson Samrat GC", "+91 84385 23972"]
     ],
     "image": "images/paper-presentation.webp",
     "rules": [
@@ -176,11 +176,11 @@
     "eventType": "Offline",
     "category": "Technical",
     "facultyCoordinator": [
-      ["Ms S Priyadharshini", "+91 91234 00004"]
+      ["Ms S Priyadharshini", "+91 84385 23972"]
     ],
     "studentCoordinator": [
       ["Muthuselvam D", "+91 98765 00004"],
-      ["Sharvin V", "+91 98765 00004"]
+      ["Sharvin V", "+91 91760 23120"]
     ],
     "image": "images/robo-race.webp",
     "rules": [
@@ -207,7 +207,7 @@
     ],
     "studentCoordinator": [
       ["Gokulraj K", "+91 98765 00005"],
-      ["Guru Akash C", "+91 98765 00005"]
+      ["Guru Akash C", "+91 84385 23972"]
     ],
     "image": "images/line-following-robot.webp",
     "rules": [
