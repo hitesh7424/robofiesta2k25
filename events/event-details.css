@@ -193,4 +193,7 @@ body {
   }
 }
 
-
+.contactNumber{
+  color: #ff4500; /* changed from yellow */
+  text-decoration: none;
+}

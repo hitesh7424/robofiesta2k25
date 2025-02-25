@@ -14,6 +14,7 @@ body {
 header h1 {
   margin: 20px 0;
   font-size: 2.5rem;
+  margin-top: 100px;
   text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
 }
 
@@ -27,7 +28,7 @@ header h1 {
   border: none;
   color: #0a0a0a;
   padding: 10px 20px;
-  margin: 0 5px;
+  margin: 10px 5px;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -59,7 +60,7 @@ header h1 {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  /* overflow: hidden; */
+  overflow: hidden;
   transition: transform 0.3s ease;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }

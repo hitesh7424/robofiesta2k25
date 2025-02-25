@@ -17,10 +17,10 @@ function getQueryParam(param) {
       const response = await fetch('events.json');
       const eventsData = await response.json();
       const event = eventsData[eventKey.toLowerCase()];
-      // if (!event) {
-      //   window.location.href = "index.html";
-      //   return;
-      // }
+      if (!event) {
+        window.location.href = "index.html";
+        return;
+      }
   
       // Populate basic event details
       document.getElementById('event-title').textContent = event.name;
@@ -39,11 +39,15 @@ function getQueryParam(param) {
         document.getElementById('event-image').src = event.image;
       }
   
-      // Populate coordinators (existing functionality)
+      // Populate coordinators with telephone hyperlinks
       const facultyList = document.getElementById('faculty-coordinator');
-      facultyList.innerHTML = event.facultyCoordinator.map(name => `<li>${name}</li>`).join('');
+      facultyList.innerHTML = event.facultyCoordinator.map(coordinator => 
+        `<li>${coordinator[0]} | <a href="tel:${coordinator[1]}">${coordinator[1]}</a></li>`
+      ).join('');
       const studentList = document.getElementById('student-coordinator');
-      studentList.innerHTML = event.studentCoordinator.map(name => `<li>${name}</li>`).join('');
+      studentList.innerHTML = event.studentCoordinator.map(coordinator => 
+        `<li>${coordinator[0]} | <a href="tel:${coordinator[1]}">${coordinator[1]}</a></li>`
+      ).join('');
   
       // Populate event rules
       const rulesList = document.getElementById('event-rules');
@@ -53,7 +57,15 @@ function getQueryParam(param) {
         rulesList.innerHTML = "<li>No rules provided.</li>";
       }
   
-  
+      // Populate contact details
+      if(event.contact) {
+        const facultyContact = event.contact.faculty;
+        const studentContact = event.contact.student;
+        document.getElementById('event-faculty-contact').textContent =
+          `${facultyContact.name} | Phone: <a class="contactNumber" href="tel:${facultyContact.phone}" >${facultyContact.phone}</a>`;
+        document.getElementById('event-student-contact').textContent =
+          `${studentContact.name} | Phone:  <a class="contactNumber" href="tel:${studentContact.phone}" >${studentContact.phone}</a>`;
+      }
 
       // Attach event listener to registration buttons
       document.querySelectorAll('.register-btn').forEach(btn => {

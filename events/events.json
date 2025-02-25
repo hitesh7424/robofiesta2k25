@@ -11,26 +11,21 @@
     "groupType": "Team (Max 4 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Ms CH Priyanka"],
-    "studentCoordinator": ["JOHN PETER D", "GURU AKASH C", "MOHAN E", "SHARVIN V"],
+    "facultyCoordinator": [
+      ["Ms CH Priyanka", "+91 91234 56789"]
+    ],
+    "studentCoordinator": [
+      ["JOHN PETER D", "+91 99887 66554"],
+      ["GURU AKASH C", "+91 99887 66554"],
+      ["MOHAN E", "+91 99887 66554"],
+      ["SHARVIN V", "+91 99887 66554"]
+    ],
     "image": "images/hack-fest.webp",
     "rules": [
       "Participants must bring their laptops for hands-on exercises.",
       "Basic knowledge of programming is recommended.",
       "Certificates will be provided upon completion."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Ms CH Priyanka",
-        "email": "akumar@example.com",
-        "phone": "+91 91234 56789"
-      },
-      "student": {
-        "name": "Madhan E",
-        "email": "riya@example.com",
-        "phone": "+91 99887 66554"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "workshop-plc": {
@@ -45,26 +40,19 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Workshop",
-    "facultyCoordinator": ["Ms CH Priyanka"],
-    "studentCoordinator": ["Madhan E", "Pranav Anandkumar"],
+    "facultyCoordinator": [
+      ["Ms CH Priyanka", "+91 91234 56789"]
+    ],
+    "studentCoordinator": [
+      ["Madhan E", "+91 99887 66554"],
+      ["Pranav Anandkumar", "+91 99887 66554"]
+    ],
     "image": "images/workshop-plc.webp",
     "rules": [
       "Participants must bring their laptops for hands-on exercises.",
       "Basic knowledge of programming is recommended.",
       "Certificates will be provided upon completion."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Ms CH Priyanka",
-        "email": "akumar@example.com",
-        "phone": "+91 91234 56789"
-      },
-      "student": {
-        "name": "Madhan E",
-        "email": "riya@example.com",
-        "phone": "+91 99887 66554"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "workshop-ros": {
@@ -79,26 +67,19 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Workshop",
-    "facultyCoordinator": ["Mr S Tharmlingam"],
-    "studentCoordinator": ["Karthick P", "Mokesh S"],
+    "facultyCoordinator": [
+      ["Mr S Tharmlingam", "+91 92345 67890"]
+    ],
+    "studentCoordinator": [
+      ["Karthick P", "+91 98765 43211"],
+      ["Mokesh S", "+91 98765 43211"]
+    ],
     "image": "images/workshop-ros.webp",
     "rules": [
       "Participants must solve problems within the given time frame.",
       "Internet access is allowed only for research purposes.",
       "Plagiarism or copying code from others will lead to disqualification."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Mr S Tharmlingam",
-        "email": "snair@example.com",
-        "phone": "+91 92345 67890"
-      },
-      "student": {
-        "name": "Karthick P",
-        "email": "vikram@example.com",
-        "phone": "+91 98765 43211"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "project-expo": {
@@ -113,26 +94,19 @@
     "groupType": "Team (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Mr S Tharmlingam"],
-    "studentCoordinator": ["Vignesh K", "Ranjan S"],
+    "facultyCoordinator": [
+      ["Mr S Tharmlingam", "+91 98765 00001"]
+    ],
+    "studentCoordinator": [
+      ["Vignesh K", "+91 87654 32100"],
+      ["Ranjan S", "+91 87654 32100"]
+    ],
     "image": "images/project-expo.webp",
     "rules": [
       "Each team must submit a business plan document before the event.",
       "Presentations should not exceed 15 minutes.",
       "Judging criteria include feasibility, innovation, and presentation skills."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Mr S Tharmlingam",
-        "email": "rmehta@example.com",
-        "phone": "+91 98765 00001"
-      },
-      "student": {
-        "name": "Vignesh K",
-        "email": "sneha@example.com",
-        "phone": "+91 87654 32100"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "paper-presentation": {
@@ -147,26 +121,19 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Ms CH Priyanka"],
-    "studentCoordinator": ["Shankar Narayan S", "Henson Samrat GC"],
+    "facultyCoordinator": [
+      ["Ms CH Priyanka", "+91 91234 00002"]
+    ],
+    "studentCoordinator": [
+      ["Shankar Narayan S", "+91 98765 00002"],
+      ["Henson Samrat GC", "+91 98765 00002"]
+    ],
     "image": "images/paper-presentation.webp",
     "rules": [
       "Participants must bring their own laptops.",
       "Pre-requisites include basic knowledge of networking and programming.",
       "Certification will be provided upon completion."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Ms CH Priyanka",
-        "email": "rsharma@example.com",
-        "phone": "+91 91234 00002"
-      },
-      "student": {
-        "name": "Shankar Narayan S",
-        "email": "priya@example.com",
-        "phone": "+91 98765 00002"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "sumo-bot": {
@@ -181,26 +148,19 @@
     "groupType": "Team (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Ms M Vennila"],
-    "studentCoordinator": ["Prashanth S", "Mohan E"],
+    "facultyCoordinator": [
+      ["Ms M Vennila", "+91 92345 00003"]
+    ],
+    "studentCoordinator": [
+      ["Prashanth S", "+91 98765 00003"],
+      ["Mohan E", "+91 98765 00003"]
+    ],
     "image": "images/sumo-bot.webp",
     "rules": [
       "All teams must submit their design proposal before the event.",
       "The robot must be built within the specified size and weight constraints.",
       "Teams will have one practice session before the competition begins."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Ms M Vennila",
-        "email": "kiyer@example.com",
-        "phone": "+91 92345 00003"
-      },
-      "student": {
-        "name": "Prashanth S",
-        "email": "rahul@example.com",
-        "phone": "+91 98765 00003"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "robo-race": {
@@ -215,26 +175,19 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Ms S Priyadharshini"],
-    "studentCoordinator": ["Muthuselvam D", "Sharvin V"],
+    "facultyCoordinator": [
+      ["Ms S Priyadharshini", "+91 91234 00004"]
+    ],
+    "studentCoordinator": [
+      ["Muthuselvam D", "+91 98765 00004"],
+      ["Sharvin V", "+91 98765 00004"]
+    ],
     "image": "images/robo-race.webp",
     "rules": [
       "Participants must register individually.",
       "Match formats and game titles will be announced on the day of the event.",
       "Fair play and sportsmanship are mandatory."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Ms S Priyadharshini",
-        "email": "dkapoor@example.com",
-        "phone": "+91 91234 00004"
-      },
-      "student": {
-        "name": "Muthuselvam D",
-        "email": "anjali@example.com",
-        "phone": "+91 98765 00004"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "line-following-robot": {
@@ -249,26 +202,19 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Mr S Tharmlingam"],
-    "studentCoordinator": ["Gokulraj K", "Guru Akash C"],
+    "facultyCoordinator": [
+      ["Mr S Tharmlingam", "+91 91234 00005"]
+    ],
+    "studentCoordinator": [
+      ["Gokulraj K", "+91 98765 00005"],
+      ["Guru Akash C", "+91 98765 00005"]
+    ],
     "image": "images/line-following-robot.webp",
     "rules": [
       "Participants should bring a sketchpad or digital device for design.",
       "Basic knowledge of design software is recommended.",
       "Certificates will be provided upon completion."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Mr S Tharmlingam",
-        "email": "lpatel@example.com",
-        "phone": "+91 91234 00005"
-      },
-      "student": {
-        "name": "Gokulraj K",
-        "email": "sanjay@example.com",
-        "phone": "+91 98765 00005"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "robo-soccer": {
@@ -283,26 +229,19 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Ms M Vennila"],
-    "studentCoordinator": ["Akash R", "Prathap A"],
+    "facultyCoordinator": [
+      ["Ms M Vennila", "+91 91234 00006"]
+    ],
+    "studentCoordinator": [
+      ["Akash R", "+91 98765 00006"],
+      ["Prathap A", "+91 98765 00006"]
+    ],
     "image": "images/robo-soccer.webp",
     "rules": [
       "Performances should not exceed 5 minutes.",
       "Participants must provide their own instruments.",
       "Judging will be based on creativity, skill, and stage presence."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Ms M Vennila",
-        "email": "psharma@example.com",
-        "phone": "+91 91234 00006"
-      },
-      "student": {
-        "name": "Akash R",
-        "email": "kiran@example.com",
-        "phone": "+91 98765 00006"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "drone-shoot": {
@@ -317,26 +256,18 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Mr. J. Singh"],
-    "studentCoordinator": ["Neha Gupta"],
+    "facultyCoordinator": [
+      ["Mr. J. Singh", "+91 91234 00007"]
+    ],
+    "studentCoordinator": [
+      ["Neha Gupta", "+91 98765 00007"]
+    ],
     "image": "images/drone-shoot.webp",
     "rules": [
       "Participants must complete a pre-workshop assignment.",
       "Basic knowledge of 3D modeling is beneficial.",
       "All designs must be original."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Mr. J. Singh",
-        "email": "jsingh@example.com",
-        "phone": "+91 91234 00007"
-      },
-      "student": {
-        "name": "Neha Gupta",
-        "email": "neha@example.com",
-        "phone": "+91 98765 00007"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   },
   "drone-racing": {
@@ -351,26 +282,18 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": ["Dr. M. Rao"],
-    "studentCoordinator": ["Suresh Kumar"],
+    "facultyCoordinator": [
+      ["Dr. M. Rao", "+91 91234 00008"]
+    ],
+    "studentCoordinator": [
+      ["Suresh Kumar", "+91 98765 00008"]
+    ],
     "image": "images/drone-racing.webp",
     "rules": [
       "Participants must adhere to safety guidelines.",
       "Drones must meet the specified technical requirements.",
       "Any damage to the track will result in disqualification."
     ],
-    "contact": {
-      "faculty": {
-        "name": "Dr. M. Rao",
-        "email": "mrao@example.com",
-        "phone": "+91 91234 00008"
-      },
-      "student": {
-        "name": "Suresh Kumar",
-        "email": "suresh@example.com",
-        "phone": "+91 98765 00008"
-      }
-    },
     "registrationLink": "https://forms.gle/5iyj8FFUcSuEfg8L8"
   }
 }
