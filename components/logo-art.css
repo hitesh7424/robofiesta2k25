@@ -1,7 +1,8 @@
 /* Style the video as needed, for example, set a fixed width */
 .logo-video {
-  width: auto; /* Adjust the size as needed */
-  height: 300px;
+  width: 75%; /* Adjust the size as needed */
+  /* height: 300px; */
   display: block;
+  overflow: hidden;
   margin: 0 auto; /* Centers the video */
 }
