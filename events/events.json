@@ -6,19 +6,17 @@
     "date": "21st to 22nd March",
     "time": "11:00 AM to 11:00 AM (24 hours)",
     "venue": "CAD lab",
-    "registrationFee": "₹1000 per person",
+    "registrationFee": "₹1000 per Team",
     "prize": "₹10000",
     "groupType": "Team (Max 4 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Ms CH Priyanka", "+91 91234 56789"]
-    ],
+    "facultyCoordinator": [["Ms CH Priyanka", "+918754584534"]],
     "studentCoordinator": [
-      ["JOHN PETER D", "+91 73051 91951"],
-      ["GURU AKASH C", "+91 84385 23972"],
-      ["MOHAN E", "+91 99887 66554"],
-      ["SHARVIN V", "+91 91760 23120"]
+      ["JOHN PETER D", "+919176023120"],
+      ["GURU AKASH C", "+919176023120"],
+      ["MOHAN E", "+919176023120"],
+      ["SHARVIN V", "+919176023120"]
     ],
     "image": "images/hack-fest.webp",
     "rules": [
@@ -30,7 +28,7 @@
   },
   "workshop-plc": {
     "name": "Workshop-1 PLC",
-    "shortDescription": "Learn the basics of Programmable Logic Controllers.",
+    "shortDescription": "WORKSHOP – PLC Essentials: From Theory to Practice",
     "description": "The Workshop-1 PLC provides an introduction to Programmable Logic Controllers (PLCs). Participants will learn about PLC programming, hardware configuration, and practical applications in industrial automation.",
     "date": "21st March",
     "time": "9AM - 12PM",
@@ -40,12 +38,10 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Workshop",
-    "facultyCoordinator": [
-      ["Ms CH Priyanka", "+91 91234 56789"]
-    ],
+    "facultyCoordinator": [["Ms CH Priyanka", "+918754584534"]],
     "studentCoordinator": [
-      ["Madhan E", "+91 99887 66554"],
-      ["Pranav Anandkumar", "+91 99887 66554"]
+      ["Madhan E", "+918754724997"],
+      ["Pranav Anandkumar", "+919952869573"]
     ],
     "image": "images/workshop-plc.webp",
     "rules": [
@@ -57,7 +53,7 @@
   },
   "workshop-ros": {
     "name": "Workshop-2 ROS",
-    "shortDescription": "Master the Robot Operating System (ROS) with hands-on experience.",
+    "shortDescription": "ROS for Absolute Beginners: Basics on Navigation",
     "description": "Join the Workshop-2 ROS to dive into the world of robotics. This workshop offers hands-on experience with the Robot Operating System (ROS), covering essential concepts, programming, and real-world applications. Perfect for aspiring roboticists and engineers.",
     "date": "22nd March",
     "time": "9AM to 12PM",
@@ -67,12 +63,10 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Workshop",
-    "facultyCoordinator": [
-      ["Mr S Tharmlingam", "+91 92345 67890"]
-    ],
+    "facultyCoordinator": [["Mr S Tharmlingam", "+919786588167"]],
     "studentCoordinator": [
-      ["Karthick P", "+91 98765 43211"],
-      ["Mokesh S", "+91 98765 43211"]
+      ["Karthick P", "+918220996520"],
+      ["Mokesh S", "+917550271234"]
     ],
     "image": "images/workshop-ros.webp",
     "rules": [
@@ -94,12 +88,10 @@
     "groupType": "Team (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Mr S Tharmlingam", "+91 98765 00001"]
-    ],
+    "facultyCoordinator": [["Mr S Tharmlingam", "+919786588167"]],
     "studentCoordinator": [
-      ["Vignesh K", "+91 87654 32100"],
-      ["Ranjan S", "+91 87654 32100"]
+      ["Vignesh K", "+917418354320"],
+      ["Ranjan S", "+917904125505"]
     ],
     "image": "images/project-expo.webp",
     "rules": [
@@ -112,21 +104,31 @@
   "paper-presentation": {
     "name": "Paper Presentation",
     "shortDescription": "Present your research and innovative ideas.",
-    "description": "The Paper Presentation event provides a platform for researchers and students to present their innovative ideas and research findings. Participants will have the opportunity to showcase their work, receive feedback from experts, and compete for recognition and prizes.",
+    "description": "The Paper Presentation event provides a platform for researchers and students to present their innovative ideas and research findings. Participants will have the opportunity to showcase their work, receive feedback from experts, and compete for recognition and prizes. Topics include:",
+    "topics": [
+      "Smart Collaborative Robotics",
+      "Digital Twin-Driven Robotics",
+      "3D Printing and Rapid Prototyping",
+      "Autonomous Mobile Robots in Industrial Logistics",
+      "Smart Sensor Networks in Automation",
+      "Bio-hybrid Robotics",
+      "Deep Learning in Computer Vision",
+      "Cyber security in a Connected World",
+      "IoT-Enabled Smart Cities",
+      "Quantum Machine Learning"
+    ],
     "date": "22nd March",
     "time": "9:30 AM - 12:30 PM",
     "venue": "EDUSAT Hall",
-    "registrationFee": "₹150 per person",
+    "registrationFee": "₹150 per team",
     "prize": "₹3000",
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Ms CH Priyanka", "+91 91234 00002"]
-    ],
+    "facultyCoordinator": [["Ms CH Priyanka", "+918754584534"]],
     "studentCoordinator": [
-      ["Shankar Narayan S", "+91 98765 00002"],
-      ["Henson Samrat GC", "+91 84385 23972"]
+      ["Shankar Narayan S", "+919444034424"],
+      ["Henson Samrat GC", "+918438523972"]
     ],
     "image": "images/paper-presentation.webp",
     "rules": [
@@ -143,17 +145,15 @@
     "date": "22nd March",
     "time": "9:30 AM - 10:30 AM",
     "venue": "MSB T8",
-    "registrationFee": "₹250 per person",
+    "registrationFee": "₹250 per Team",
     "prize": "₹3000",
     "groupType": "Team (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Ms M Vennila", "+91 92345 00003"]
-    ],
+    "facultyCoordinator": [["Ms M Vennila", "+917708103292"]],
     "studentCoordinator": [
-      ["Prashanth S", "+91 98765 00003"],
-      ["Mohan E", "+91 98765 00003"]
+      ["Prashanth S", "+918925489725"],
+      ["Mohan E", "+918667646495"]
     ],
     "image": "images/sumo-bot.webp",
     "rules": [
@@ -175,12 +175,10 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Ms S Priyadharshini", "+91 84385 23972"]
-    ],
+    "facultyCoordinator": [["Ms S Priyadharshini", "+919629149715"]],
     "studentCoordinator": [
-      ["Muthuselvam D", "+91 98765 00004"],
-      ["Sharvin V", "+91 91760 23120"]
+      ["Muthuselvam D", "+919566189224"],
+      ["Sharvin V", "+919176023120"]
     ],
     "image": "images/robo-race.webp",
     "rules": [
@@ -202,12 +200,10 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Mr S Tharmlingam", "+91 91234 00005"]
-    ],
+    "facultyCoordinator": [["Mr S Tharmlingam", "+919123400005"]],
     "studentCoordinator": [
-      ["Gokulraj K", "+91 98765 00005"],
-      ["Guru Akash C", "+91 84385 23972"]
+      ["Gokulraj K", "+919876500005"],
+      ["Guru Akash C", "+918438523972"]
     ],
     "image": "images/line-following-robot.webp",
     "rules": [
@@ -229,12 +225,10 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Ms M Vennila", "+91 91234 00006"]
-    ],
+    "facultyCoordinator": [["Mr J Srinivas", "+918754114996"]],
     "studentCoordinator": [
-      ["Akash R", "+91 98765 00006"],
-      ["Prathap A", "+91 98765 00006"]
+      ["Akash R", "+917200372319"],
+      ["Prathap A", "+917695970453"]
     ],
     "image": "images/robo-soccer.webp",
     "rules": [
@@ -246,21 +240,21 @@
   },
   "drone-shoot": {
     "name": "Drone Shoot",
-    "shortDescription": "Show off your drone piloting skills in a thrilling shootout.",
-    "description": "The Drone Shoot event challenges participants to demonstrate their drone piloting skills in a series of exciting and competitive tasks. Teams will navigate their drones through obstacles and aim for targets, showcasing precision, agility, and control. This event is perfect for drone enthusiasts and tech-savvy competitors.",
-    "date": "April 15, 2025",
-    "time": "10:00 AM - 3:00 PM",
-    "venue": "Innovation Lab",
-    "registrationFee": "₹200 per person",
-    "prize": "₹0",
-    "groupType": "Individual",
+    "shortDescription": "Capture breathtaking aerial footage with your drone.",
+    "description": "Experience a new perspective on our campus! Drone Shoot is a dynamic event where participants use drones equipped with cameras to capture stunning aerial footage of our campus. Showcase your technical skills and creative vision by submitting a finalized video that highlights our campus from above. Join us to elevate your perspective—register now and bring your aerial vision to life!",
+    "date": "22nd March 2025",
+    "time": "09:00 AM TO 12:00 PM",
+    "venue": "KVEG CAMPUS",
+    "registrationFee": "₹250 per Team of 2",
+    "prize": "₹3000",
+    "groupType": "Group (2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Mr. J. Singh", "+91 91234 00007"]
-    ],
+    "facultyCoordinator": [["Ms.S.PRIYADHARSHINI", "+919629149715"]],
     "studentCoordinator": [
-      ["Neha Gupta", "+91 98765 00007"]
+      ["RANJITH S", "+919500740713"],
+      ["KEERTHIHARAN S", "+919843882088"],
+      ["HITESH KUMAR GAURAV", "+917319776396"]
     ],
     "image": "images/drone-shoot.webp",
     "rules": [
@@ -274,19 +268,18 @@
     "name": "Maze Solver",
     "shortDescription": "Program your robot to navigate and solve a complex maze.",
     "description": "The Maze Solver event challenges participants to design and program robots that can autonomously navigate through a complex maze. Teams will compete to see whose robot can find the exit in the shortest time, testing their skills in robotics, programming, and problem-solving.",
-    "date": "April 18, 2025",
-    "time": "11:00 AM - 1:00 PM",
-    "venue": "Outdoor Field",
-    "registrationFee": "₹150 per person",
-    "prize": "₹3500",
-    "groupType": "Individual",
+    "date": "22nd March",
+    "time": "10:00AM - 11:00AM",
+    "venue": "MSB T7",
+    "registrationFee": "₹250 per Team",
+    "prize": "₹3000",
+    "groupType": "Group (2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [
-      ["Dr. M. Rao", "+91 91234 00008"]
-    ],
+    "facultyCoordinator": [["Mr J Srinivas", "+918754114996"]],
     "studentCoordinator": [
-      ["Suresh Kumar", "+91 98765 00008"]
+      ["VijayaKumar V", "+918940231185"],
+      ["Jeron S", "+917358997481"]
     ],
     "image": "images/robo-maze.webp",
     "rules": [
