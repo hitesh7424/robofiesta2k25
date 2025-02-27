@@ -49,13 +49,7 @@ function getQueryParam(param) {
         `<li>${coordinator[0]} | <a href="tel:${coordinator[1]}">${coordinator[1]}</a></li>`
       ).join('');
   
-      // Populate event rules
-      const rulesList = document.getElementById('event-rules');
-      if(event.rules && event.rules.length) {
-        rulesList.innerHTML = event.rules.map(rule => `<li>${rule}</li>`).join('');
-      } else {
-        rulesList.innerHTML = "<li>No rules provided.</li>";
-      }
+
   
       // Populate contact details
       if(event.contact) {
