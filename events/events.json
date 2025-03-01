@@ -11,13 +11,14 @@
     "groupType": "Team (Max 4 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Ms CH Priyanka", "+918754584534"]],
+    "facultyCoordinator": [["Ms CH Priyanka", "8754584534"]],
     "studentCoordinator": [
-      ["JOHN PETER D", "+919176023120"],
-      ["GURU AKASH C", "+919176023120"],
-      ["MOHAN E", "+919176023120"],
-      ["SHARVIN V", "+919176023120"]
-    ],
+      ["JOHN PETER D", "7305191951"],
+      ["GURU AKASH C", "6379929194"],
+      ["MOHAN E", "8667646495"],
+      ["SHARVIN V", "9176023120"]
+    ]
+    ,
     "image": "images/hack-fest.webp",
     "rules": [
       "Participants must bring their laptops for hands-on exercises.",
@@ -38,10 +39,10 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Workshop",
-    "facultyCoordinator": [["Ms CH Priyanka", "+918754584534"]],
+    "facultyCoordinator": [["Ms CH Priyanka", "8754584534"]],
     "studentCoordinator": [
-      ["Madhan E", "+918754724997"],
-      ["Pranav Anandkumar", "+919952869573"]
+      ["Madhan E", "8754724997"],
+      ["Pranav Anandkumar", "9952869573"]
     ],
     "image": "images/workshop-plc.webp",
     "rules": [
@@ -63,10 +64,10 @@
     "groupType": "Individual",
     "eventType": "Offline",
     "category": "Workshop",
-    "facultyCoordinator": [["Mr S Tharmlingam", "+919786588167"]],
+    "facultyCoordinator": [["Mr S Tharmlingam", "9786588167"]],
     "studentCoordinator": [
-      ["Karthick P", "+918220996520"],
-      ["Mokesh S", "+917550271234"]
+      ["Karthick P", "8220996520"],
+      ["Mokesh S", "7550271234"]
     ],
     "image": "images/workshop-ros.webp",
     "rules": [
@@ -83,15 +84,15 @@
     "date": "22nd March 2025",
     "time": "10:00 AM to 11:30 AM",
     "venue": "CAD lab",
-    "registrationFee": "₹150 per person",
+    "registrationFee": "₹150 per Team",
     "prize": "₹2000",
     "groupType": "Team (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Mr S Tharmlingam", "+919786588167"]],
+    "facultyCoordinator": [["Mr S Tharmlingam", "9786588167"]],
     "studentCoordinator": [
-      ["Vignesh K", "+917418354320"],
-      ["Ranjan S", "+917904125505"]
+      ["Vignesh K", "7418354320"],
+      ["Ranjan S", "7904125505"]
     ],
     "image": "images/project-expo.webp",
     "rules": [
@@ -125,10 +126,10 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Ms CH Priyanka", "+918754584534"]],
+    "facultyCoordinator": [["Ms CH Priyanka", "8754584534"]],
     "studentCoordinator": [
-      ["Shankar Narayan S", "+919444034424"],
-      ["Henson Samrat GC", "+918438523972"]
+      ["Shankar Narayan S", "9444034424"],
+      ["Henson Samrat GC", "8438523972"]
     ],
     "image": "images/paper-presentation.webp",
     "rules": [
@@ -150,10 +151,10 @@
     "groupType": "Team (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Ms M Vennila", "+917708103292"]],
+    "facultyCoordinator": [["Ms M Vennila", "7708103292"]],
     "studentCoordinator": [
-      ["Prashanth S", "+918925489725"],
-      ["Mohan E", "+918667646495"]
+      ["Prashanth S", "8925489725"],
+      ["Mohan E", "8667646495"]
     ],
     "image": "images/sumo-bot.webp",
     "rules": [
@@ -175,10 +176,10 @@
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Ms S Priyadharshini", "+919629149715"]],
+    "facultyCoordinator": [["Ms S Priyadharshini", "9629149715"]],
     "studentCoordinator": [
-      ["Muthuselvam D", "+919566189224"],
-      ["Sharvin V", "+919176023120"]
+      ["Muthuselvam D", "9566189224"],
+      ["Sharvin V", "9176023120"]
     ],
     "image": "images/robo-race.webp",
     "rules": [
@@ -195,21 +196,24 @@
     "date": "22nd March",
     "time": "9:30 AM - 10:30 AM",
     "venue": "MSB T8",
-    "registrationFee": "₹250 per person",
+    "registrationFee": "₹250 per Team",
     "prize": "₹3000",
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Mr S Tharmlingam", "+919123400005"]],
+    "facultyCoordinator": [["Mr S Tharmlingam", "9786588167"]],
     "studentCoordinator": [
-      ["Gokulraj K", "+919876500005"],
-      ["Guru Akash C", "+918438523972"]
+      ["Gokulraj K", "6383583728"],
+      ["Guru Akash C", "6379929194"]
     ],
     "image": "images/line-following-robot.webp",
-    "rules": [
-      "Participants should bring a sketchpad or digital device for design.",
-      "Basic knowledge of design software is recommended.",
-      "Certificates will be provided upon completion."
+    "rules":  [
+      "The robot must be autonomous and wireless",
+      "The robot must fit inside a 20 cm x 20 cm x 20 cm box",
+      "The robot must not use infrared light-reflecting materials on the outside",
+      "The robot must not produce magnetic interference for other robots",
+      "The robot must be able to move in all directions",
+      "The robot must follow a black line on the playing field"
     ],
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
   },
@@ -220,15 +224,15 @@
     "date": "22nd March",
     "time": "10:30 AM - 11:30 AM",
     "venue": "MSB T3",
-    "registrationFee": "₹250 per person",
+    "registrationFee": "₹250 per Team",
     "prize": "₹3000",
     "groupType": "Group (Minimum 2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Mr J Srinivas", "+918754114996"]],
+    "facultyCoordinator": [["Mr J Srinivas", "8754114996"]],
     "studentCoordinator": [
-      ["Akash R", "+917200372319"],
-      ["Prathap A", "+917695970453"]
+      ["Akash R", "7200372319"],
+      ["Prathap A", "7695970453"]
     ],
     "image": "images/robo-soccer.webp",
     "rules": [
@@ -250,11 +254,11 @@
     "groupType": "Group (2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Ms.S.PRIYADHARSHINI", "+919629149715"]],
+    "facultyCoordinator": [["Ms.S.PRIYADHARSHINI", "9629149715"]],
     "studentCoordinator": [
-      ["RANJITH S", "+919500740713"],
-      ["KEERTHIHARAN S", "+919843882088"],
-      ["HITESH KUMAR GAURAV", "+917319776396"]
+      ["RANJITH S", "9500740713"],
+      ["KEERTHIHARAN S", "9843882088"],
+      ["HITESH KUMAR GAURAV", "7319776396"]
     ],
     "image": "images/drone-shoot.webp",
     "rules": [
@@ -276,10 +280,10 @@
     "groupType": "Group (2 Members)",
     "eventType": "Offline",
     "category": "Technical",
-    "facultyCoordinator": [["Mr J Srinivas", "+918754114996"]],
+    "facultyCoordinator": [["Mr J Srinivas", "8754114996"]],
     "studentCoordinator": [
-      ["VijayaKumar V", "+918940231185"],
-      ["Jeron S", "+917358997481"]
+      ["VijayaKumar V", "8940231185"],
+      ["Jeron S", "7358997481"]
     ],
     "image": "images/robo-maze.webp",
     "rules": [

@@ -31,7 +31,9 @@ function getQueryParam(param) {
       document.getElementById('event-venue').textContent = event.venue;
       document.getElementById('event-fee').textContent = event.registrationFee;
       document.getElementById('event-prize').textContent = event.prize;
+      document.getElementById('event-rules').textContent = event.rules;
       document.getElementById('event-group').textContent = event.groupType;
+
       document.getElementById('event-type').textContent = event.eventType;
       
       // Populate image if available
@@ -42,11 +44,11 @@ function getQueryParam(param) {
       // Populate coordinators with telephone hyperlinks
       const facultyList = document.getElementById('faculty-coordinator');
       facultyList.innerHTML = event.facultyCoordinator.map(coordinator => 
-        `<li>${coordinator[0]} | <a href="tel:${coordinator[1]}">${coordinator[1]}</a></li>`
+        `<li>${coordinator[0]} | <a id="hellos" href="tel:+91${coordinator[1]}">${coordinator[1]}</a></li>`
       ).join('');
       const studentList = document.getElementById('student-coordinator');
       studentList.innerHTML = event.studentCoordinator.map(coordinator => 
-        `<li>${coordinator[0]} | <a href="tel:${coordinator[1]}">${coordinator[1]}</a></li>`
+        `<li>${coordinator[0]} | <a id="hellos" href="tel:+91${coordinator[1]}" >${coordinator[1]}</a></li>`
       ).join('');
   
 
@@ -60,6 +62,25 @@ function getQueryParam(param) {
         document.getElementById('event-student-contact').textContent =
           `${studentContact.name} | Phone:  <a class="contactNumber" href="tel:${studentContact.phone}" >${studentContact.phone}</a>`;
       }
+
+       // Populate rules
+
+
+       var rulesContainer = document.getElementById("event-rules");
+       rulesContainer.innerHTML = ""; // Clear previous list content
+       
+       if (event.rules.length === 0) {
+         rulesContainer.textContent = "No rules specified for this event.";
+       } else {
+         for (var i = 0; i < event.rules.length; i++) {
+           var node = document.createElement("li");
+           var textnode = document.createTextNode(event.rules[i]);
+           node.appendChild(textnode);
+           rulesContainer.appendChild(node);
+         }
+       }
+       
+      
 
       // Attach event listener to registration buttons
       document.querySelectorAll('.register-btn').forEach(btn => {

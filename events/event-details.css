@@ -2,13 +2,13 @@
 
 /* Define CSS variables for a modern dark theme */
 :root {
-    --primary-color: #6dd34e;
-    --secondary-color: #03dac6;
-    --background-color: #121212;
-    --surface-color: #1f1f1f;
-    --on-primary: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.25);
-    --text-color: #e0e0e0;
+  --primary-color: #6dd34e;
+  --secondary-color: #03dac6;
+  --background-color: #121212;
+  --surface-color: #1f1f1f;
+  --on-primary: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --text-color: #e0e0e0;
 }
 
 /* Global Styles */
@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--background-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
   text-align: center;
 }
@@ -51,7 +51,8 @@ body {
   animation: neonPulse 1.5s infinite alternate;
 }
 
-.event-description, .event-short {
+.event-description,
+.event-short {
   font-size: 1.2rem;
   margin-top: 10px;
   color: var(--text-color);
@@ -60,11 +61,14 @@ body {
 
 /* Event Info Grid */
 .event-info-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin: 30px 0;
   text-align: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .event-info-box {
@@ -123,19 +127,27 @@ body {
 }
 
 .register-btn {
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   color: var(--on-primary);
 }
 
 .register-btn:hover {
-  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   transform: scale(1.05);
 }
 
 /* New styling for event image */
 #event-image {
-  width: 50%;         /* changed from 100% to 50% */
-  max-width: 300px;    /* added max-width for consistent sizing */
+  width: 50%; /* changed from 100% to 50% */
+  max-width: 300px; /* added max-width for consistent sizing */
   border-radius: 15px;
   margin-bottom: 20px;
 }
@@ -148,7 +160,8 @@ body {
 }
 
 /* Styling for extra sections */
-.event-extra, .event-contact {
+.event-extra,
+.event-contact {
   background: var(--surface-color);
   padding: 30px;
   margin-top: 30px;
@@ -156,7 +169,8 @@ body {
   text-align: left;
 }
 
-.event-extra h2, .event-contact h2 {
+.event-extra h2,
+.event-contact h2 {
   font-size: 1.8rem;
   color: var(--primary-color);
   margin-bottom: 10px;
@@ -193,7 +207,33 @@ body {
   }
 }
 
-.contactNumber{
+.contactNumber {
   color: #ff4500; /* changed from yellow */
   text-decoration: none;
+}
+
+#student-coordinator ul a{
+ color: #6dd34e;
+  list-style-type: none;
+  padding: 0;
+}
+
+#hellos {
+  color: #A2D2FF; /* Pastel Blue */
+  text-decoration: none;
+}
+
+
+.event-rules {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none; /* Remove default list bullets */
+  margin-top: 10px;
+  text-align: left;
+}
+
+.event-rules h2{
+  align-self: center;
+  color: #ff007f
 }
