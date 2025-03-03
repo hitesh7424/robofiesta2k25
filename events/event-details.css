@@ -227,11 +227,10 @@ body {
 .event-rules {
   display: flex;
   flex-direction: column;
-  list-style: none; /* Remove default list bullets */
   margin-top: 10px;
 }
 
 .event-rules h2{
   align-self: center;
-  color: #ff007f
+  color: #1eff00;
 }

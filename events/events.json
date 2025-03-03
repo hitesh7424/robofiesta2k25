@@ -48,6 +48,11 @@
     ],
     "image": "images/workshop-plc.webp",
     "rules": [
+      "Participants must review and complete all preparatory materials on PLC fundamentals before attending the workshop.",
+      "All safety protocols and operational guidelines provided by the facilitators must be followed without exception.",
+      "Each programming task and exercise should be completed independently, with proper documentation maintained throughout.",
+      "Participants are required to stick to the allotted time slots for each session to help maintain an organized workshop schedule.",
+      "Every participant must bring their own laptop with the necessary PLC simulation software pre-installed, as detailed in the workshop prerequisites."
     ],
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfW8irnG9cU-o9iXw6W8uID3rUfEDF0GGl-NdNjdVlfwi8SyQ/viewform?usp=sharing"
   },
@@ -70,6 +75,11 @@
     ],
     "image": "images/workshop-ros.webp",
     "rules": [
+      "Participants must complete all pre-workshop tutorials to build a basic understanding of ROS before the session begins.",
+      "All instructions and guidelines provided by the organizers must be strictly followed throughout the workshop.",
+      "Each participant is expected to complete all hands-on exercises and coding tasks independently, ensuring full academic integrity.",
+      "Participants should adhere to the designated session timings to ensure an efficient and smooth learning experience.",
+      "Every participant must bring their own laptop with the required ROS software pre-installed as specified in the pre-workshop guidelines."
     ],
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScwx3xA9pay3JxF4mYm_dX_HE7hZYMUlpCHGGpgxoOYx6YbNg/viewform?usp=sharing"
   },
