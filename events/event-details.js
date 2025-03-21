@@ -83,11 +83,11 @@ function getQueryParam(param) {
       
 
       // Attach event listener to registration buttons
-      document.querySelectorAll('.register-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-          window.location.href = event.registrationLink;
-        });
-      });
+     // document.querySelectorAll('.register-btn').forEach(btn => {
+      //  btn.addEventListener('click', function() {
+       //   window.location.href = event.registrationLink;
+      //  });
+     // });
 
     } catch (error) {
       console.error("Error loading event details:", error);
